@@ -1,0 +1,172 @@
+{
+    "../../src/flask/app.py": {
+        "score": "7.85",
+        "warnings": [
+            "R0902",
+            "R0201",
+            "R0904",
+            "C0103",
+            "C0302",
+            "W0212",
+            "R0913",
+            "R1705",
+            "W0621",
+            "C0330",
+            "R0912",
+            "R1710",
+            "W0613",
+            "W0511",
+            "E1101",
+            "W0703"
+        ]
+    },
+    "../../src/flask/blueprints.py": {
+        "score": "7.53",
+        "warnings": [
+            "R0902",
+            "R0904",
+            "C0103",
+            "R0903",
+            "R0913",
+            "W0212",
+            "C0330",
+            "R0205",
+            "W0511"
+        ]
+    },
+    "../../src/flask/cli.py": {
+        "score": "8.54",
+        "warnings": [
+            "C0103",
+            "W0612",
+            "R0903",
+            "R0913",
+            "W1304",
+            "R1705",
+            "W0621",
+            "C0330",
+            "W0221",
+            "C0111",
+            "R1710",
+            "W0123",
+            "W0613",
+            "R0205",
+            "W0511",
+            "W1505",
+            "W0703"
+        ]
+    },
+    "../../src/flask/config.py": {
+        "score": "8.72",
+        "warnings": [
+            "R0205",
+            "W0122",
+            "C0103",
+            "W0622"
+        ]
+    },
+    "../../src/flask/ctx.py": {
+        "score": "7.28",
+        "warnings": [
+            "R0902",
+            "R0201",
+            "C0103",
+            "W0212",
+            "E1102",
+            "R1705",
+            "C0330",
+            "C0111",
+            "R0205",
+            "E1101"
+        ]
+    },
+    "../../src/flask/debughelpers.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/globals.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/helpers.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/json/tag.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/json/__init__.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/logging.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/sessions.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/signals.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/templating.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/testing.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/views.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/wrappers.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/_compat.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/__init__.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "../../src/flask/__main__.py": {
+        "score": 0,
+        "warnings": []
+    },
+    "warnings": {
+        "W0511": "TODO omit sys.argv once https://github.com/pallets/click/issues/536 is fixed (fixme)",
+        "C0330": "Wrong hanging indentation before block (add 4 spaces).",
+        "C0302": "Too many lines in module (2455/1000) (too-many-lines)",
+        "C0103": "Argument name \"tb\" doesn't conform to snake_case naming style (invalid-name)",
+        "W0212": "Access to a protected member _preserved_exc of a client class (protected-access)",
+        "R0902": "Too many instance attributes (9/7) (too-many-instance-attributes)",
+        "R0913": "Too many arguments (9/5) (too-many-arguments)",
+        "R0201": "Method could be a function (no-self-use)",
+        "W0621": "Redefining name 'load_dotenv' from outer scope (line 596) (redefined-outer-name)",
+        "R1705": "Unnecessary \"else\" after \"return\" (no-else-return)",
+        "E1101": "Module 'sys' has no 'exc_clear' member (no-member)",
+        "R1710": "Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)",
+        "W0703": "Catching too general exception Exception (broad-except)",
+        "W0613": "Unused argument 'param' (unused-argument)",
+        "R0912": "Too many branches (17/12) (too-many-branches)",
+        "R0904": "Too many public methods (29/20) (too-many-public-methods)",
+        "R0205": "Class 'RequestContext' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)",
+        "R0903": "Too few public methods (1/2) (too-few-public-methods)",
+        "W1505": "Using deprecated method getargspec() (deprecated-method)",
+        "W1304": "Unused format argument 'e' (unused-format-string-argument)",
+        "C0111": "Missing method docstring (missing-docstring)",
+        "W0612": "Unused variable 'OpenSSL' (unused-variable)",
+        "W0221": "Parameters differ from overridden 'main' method (arguments-differ)",
+        "W0123": "Use of eval (eval-used)",
+        "W0622": "Redefining built-in 'type' (redefined-builtin)",
+        "W0122": "Use of exec (exec-used)",
+        "E1102": "request_close is not callable (not-callable)"
+    }
+}

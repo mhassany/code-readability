@@ -1,0 +1,82 @@
+{
+    "flask/app.py": {
+        "mi": 2.873611293559958,
+        "rank": "C"
+    },
+    "flask/blueprints.py": {
+        "mi": 50.930690288789215,
+        "rank": "A"
+    },
+    "flask/cli.py": {
+        "mi": 27.61387558110269,
+        "rank": "A"
+    },
+    "flask/config.py": {
+        "mi": 56.22039609922887,
+        "rank": "A"
+    },
+    "flask/ctx.py": {
+        "mi": 48.797303450249196,
+        "rank": "A"
+    },
+    "flask/debughelpers.py": {
+        "mi": 55.81345367778238,
+        "rank": "A"
+    },
+    "flask/globals.py": {
+        "mi": 84.16752922994455,
+        "rank": "A"
+    },
+    "flask/helpers.py": {
+        "mi": 29.183284426484043,
+        "rank": "A"
+    },
+    "flask/logging.py": {
+        "mi": 77.21745512587495,
+        "rank": "A"
+    },
+    "flask/sessions.py": {
+        "mi": 57.149971464710696,
+        "rank": "A"
+    },
+    "flask/signals.py": {
+        "mi": 100.0,
+        "rank": "A"
+    },
+    "flask/templating.py": {
+        "mi": 67.28922858905452,
+        "rank": "A"
+    },
+    "flask/testing.py": {
+        "mi": 61.829283593209674,
+        "rank": "A"
+    },
+    "flask/views.py": {
+        "mi": 61.4334809288865,
+        "rank": "A"
+    },
+    "flask/wrappers.py": {
+        "mi": 68.87734685865645,
+        "rank": "A"
+    },
+    "flask/_compat.py": {
+        "mi": 70.90721495883564,
+        "rank": "A"
+    },
+    "flask/__init__.py": {
+        "mi": 100.0,
+        "rank": "A"
+    },
+    "flask/__main__.py": {
+        "mi": 74.84640431451162,
+        "rank": "A"
+    },
+    "flask/json/tag.py": {
+        "mi": 59.694192230481754,
+        "rank": "A"
+    },
+    "flask/json/__init__.py": {
+        "mi": 55.06590239065166,
+        "rank": "A"
+    }
+}

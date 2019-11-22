@@ -1,0 +1,85 @@
+************* Module flask.cli
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:966:6: W0511: TODO omit sys.argv once https://github.com/pallets/click/issues/536 is fixed (fixme)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:488:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        self,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:489:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        add_default_commands=True,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:490:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        create_app=None,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:491:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        add_version_option=True,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:492:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        load_dotenv=True,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:493:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        set_debug_flag=True,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:494:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        **extra
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:826:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+    info, host, port, reload, debugger, eager_loading, with_threads, cert, extra_files
+    ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:959:0: C0330: Wrong hanging indentation (remove 4 spaces).
+        cmd="export" if os.name == "posix" else "set",
+    |   ^ (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:960:0: C0330: Wrong hanging indentation (remove 4 spaces).
+        prefix="$ " if os.name == "posix" else "> ",
+    |   ^ (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:68:4: R1705: Unnecessary "elif" after "return" (no-else-return)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:108:16: W1505: Using deprecated method getargspec() (deprecated-method)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:112:4: R1705: Unnecessary "elif" after "return" (no-else-return)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:130:4: C0103: Variable name "tb" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:138:12: C0103: Variable name "tb" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:168:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:175:12: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:177:20: W1304: Unused format argument 'e' (unused-format-string-argument)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:185:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:236:0: C0111: Missing function docstring (missing-docstring)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:256:4: R1705: Unnecessary "else" after "return" (no-else-return)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:236:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:237:4: W0612: Unused variable '__traceback_hide__' (unused-variable)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:262:0: C0111: Missing function docstring (missing-docstring)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:262:21: W0613: Unused argument 'param' (unused-argument)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:282:0: C0103: Constant name "version_option" doesn't conform to UPPER_CASE naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:292:0: R0205: Class 'DispatchingApp' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:315:23: W0703: Catching too general exception Exception (broad-except)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:311:12: W0612: Unused variable '__traceback_hide__' (unused-variable)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:318:8: C0103: Variable name "t" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:322:8: W0612: Unused variable '__traceback_hide__' (unused-variable)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:330:20: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:329:8: W0612: Unused variable '__traceback_hide__' (unused-variable)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:341:16: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:343:16: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:335:8: W0612: Unused variable '__traceback_hide__' (unused-variable)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:292:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:347:0: R0205: Class 'ScriptInfo' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:373:8: W0612: Unused variable '__traceback_hide__' (unused-variable)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:347:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:413:0: C0103: Constant name "pass_script_info" doesn't conform to UPPER_CASE naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:416:0: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:446:8: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:492:8: W0621: Redefining name 'load_dotenv' from outer scope (line 596) (redefined-outer-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:487:4: R0913: Too many arguments (6/5) (too-many-arguments)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:522:12: C0103: Variable name "ep" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:526:4: W0221: Parameters differ from overridden 'get_command' method (arguments-differ)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:536:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:542:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:526:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:553:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:557:15: W0703: Catching too general exception Exception (broad-except)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:567:4: W0221: Parameters differ from overridden 'main' method (arguments-differ)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:712:20: W0612: Unused variable 'OpenSSL' (unused-variable)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:814:0: R0913: Too many arguments (9/5) (too-many-arguments)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:891:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:892:12: W0123: Use of eval (eval-used)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:945:0: C0103: Constant name "cli" doesn't conform to UPPER_CASE naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/cli.py:965:0: C0111: Missing function docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.54/10 (previous run: 8.54/10, +0.00)
+

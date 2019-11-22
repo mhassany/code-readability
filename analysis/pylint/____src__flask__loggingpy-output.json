@@ -1,0 +1,6 @@
+************* Module flask.logging
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/logging.py:54:0: C0103: Constant name "default_handler" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.71/10 (previous run: 9.71/10, +0.00)
+

@@ -1,0 +1,8 @@
+************* Module flask.views
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/views.py:15:0: C0103: Constant name "http_method_funcs" doesn't conform to UPPER_CASE naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/views.py:20:0: R0205: Class 'View' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/views.py:154:4: W0221: Parameters differ from overridden 'dispatch_request' method (arguments-differ)
+
+------------------------------------------------------------------
+Your code has been rated at 9.33/10 (previous run: 9.33/10, +0.00)
+

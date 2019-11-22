@@ -1,0 +1,273 @@
+{
+    "../../src/flask/app.py": {
+        "score": "7.85",
+        "warnings": [
+            "C0103",
+            "R0902",
+            "R0913",
+            "R1705",
+            "W0703",
+            "R0912",
+            "W0511",
+            "R0201",
+            "R1710",
+            "W0621",
+            "C0330",
+            "W0613",
+            "E1101",
+            "R0904",
+            "C0302",
+            "W0212"
+        ]
+    },
+    "../../src/flask/blueprints.py": {
+        "score": "7.53",
+        "warnings": [
+            "C0103",
+            "R0903",
+            "R0902",
+            "R0913",
+            "W0511",
+            "R0205",
+            "C0330",
+            "R0904",
+            "W0212"
+        ]
+    },
+    "../../src/flask/cli.py": {
+        "score": "8.54",
+        "warnings": [
+            "C0103",
+            "R1705",
+            "W1304",
+            "C0111",
+            "W0703",
+            "R0903",
+            "W0511",
+            "R0205",
+            "R1710",
+            "W0621",
+            "C0330",
+            "W0613",
+            "W0221",
+            "W0612",
+            "W1505",
+            "R0913",
+            "W0123"
+        ]
+    },
+    "../../src/flask/config.py": {
+        "score": "8.72",
+        "warnings": [
+            "C0103",
+            "W0622",
+            "R0205",
+            "W0122"
+        ]
+    },
+    "../../src/flask/ctx.py": {
+        "score": "7.28",
+        "warnings": [
+            "C0103",
+            "R1705",
+            "R0902",
+            "C0111",
+            "E1102",
+            "R0205",
+            "R0201",
+            "C0330",
+            "E1101",
+            "W0212"
+        ]
+    },
+    "../../src/flask/debughelpers.py": {
+        "score": "9.33",
+        "warnings": [
+            "W0231",
+            "C0111",
+            "C0103",
+            "R0903"
+        ]
+    },
+    "../../src/flask/globals.py": {
+        "score": "6.92",
+        "warnings": [
+            "C0103"
+        ]
+    },
+    "../../src/flask/helpers.py": {
+        "score": "8.84",
+        "warnings": [
+            "C0103",
+            "R0913",
+            "R0915",
+            "R0912",
+            "R1705",
+            "R0903",
+            "R0205",
+            "R0201",
+            "R1710",
+            "C0330",
+            "W0613",
+            "W0622",
+            "R0914",
+            "C0302",
+            "W0212"
+        ]
+    },
+    "../../src/flask/json/tag.py": {
+        "score": "9.22",
+        "warnings": [
+            "W0223",
+            "C0111",
+            "R0205"
+        ]
+    },
+    "../../src/flask/json/__init__.py": {
+        "score": "8.45",
+        "warnings": [
+            "C0103",
+            "C0111",
+            "E0202",
+            "R0911"
+        ]
+    },
+    "../../src/flask/logging.py": {
+        "score": "9.71",
+        "warnings": [
+            "C0103"
+        ]
+    },
+    "../../src/flask/sessions.py": {
+        "score": "7.83",
+        "warnings": [
+            "C0103",
+            "C0111",
+            "R0901",
+            "R0205",
+            "R0201",
+            "R1710",
+            "W0613",
+            "W0223"
+        ]
+    },
+    "../../src/flask/signals.py": {
+        "score": "2.26",
+        "warnings": [
+            "C0103",
+            "R0903",
+            "C0111",
+            "R0205",
+            "R0201",
+            "W0613"
+        ]
+    },
+    "../../src/flask/templating.py": {
+        "score": "9.41",
+        "warnings": [
+            "C0103",
+            "W0613"
+        ]
+    },
+    "../../src/flask/testing.py": {
+        "score": "8.27",
+        "warnings": [
+            "C0103",
+            "R0913",
+            "C0330",
+            "W0221",
+            "C0412",
+            "W1113"
+        ]
+    },
+    "../../src/flask/views.py": {
+        "score": "9.33",
+        "warnings": [
+            "C0103",
+            "W0221",
+            "R0205"
+        ]
+    },
+    "../../src/flask/wrappers.py": {
+        "score": "3.42",
+        "warnings": [
+            "C0103",
+            "R0903",
+            "C0111",
+            "R0901",
+            "R0201",
+            "R1710",
+            "C0330",
+            "W0613",
+            "E0401",
+            "E0611"
+        ]
+    },
+    "../../src/flask/_compat.py": {
+        "score": "4.12",
+        "warnings": [
+            "C0103",
+            "C0111",
+            "R0205",
+            "W0613",
+            "W0706",
+            "E0401",
+            "W0122",
+            "E1101",
+            "C0204",
+            "C0412",
+            "W0611"
+        ]
+    },
+    "../../src/flask/__init__.py": {
+        "score": "10.00",
+        "warnings": []
+    },
+    "../../src/flask/__main__.py": {
+        "score": "10.00",
+        "warnings": []
+    },
+    "warnings": {
+        "W0511": "TODO omit sys.argv once https://github.com/pallets/click/issues/536 is fixed (fixme)",
+        "C0330": "Wrong hanging indentation before block (add 4 spaces).",
+        "C0302": "Too many lines in module (1153/1000) (too-many-lines)",
+        "C0103": "Constant name \"json_available\" doesn't conform to UPPER_CASE naming style (invalid-name)",
+        "W0212": "Access to a protected member _get_current_object of a client class (protected-access)",
+        "R0902": "Too many instance attributes (9/7) (too-many-instance-attributes)",
+        "R0913": "Too many arguments (6/5) (too-many-arguments)",
+        "R0201": "Method could be a function (no-self-use)",
+        "W0621": "Redefining name 'load_dotenv' from outer scope (line 596) (redefined-outer-name)",
+        "R1705": "Unnecessary \"elif\" after \"return\" (no-else-return)",
+        "E1101": "Module 'sys' has no 'exc_clear' member (no-member)",
+        "R1710": "Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)",
+        "W0703": "Catching too general exception Exception (broad-except)",
+        "W0613": "Unused argument 'this_bases' (unused-argument)",
+        "R0912": "Too many branches (13/12) (too-many-branches)",
+        "R0904": "Too many public methods (29/20) (too-many-public-methods)",
+        "R0205": "Class '_DeprecatedBool' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)",
+        "R0903": "Too few public methods (1/2) (too-few-public-methods)",
+        "W1505": "Using deprecated method getargspec() (deprecated-method)",
+        "W1304": "Unused format argument 'e' (unused-format-string-argument)",
+        "C0111": "Missing function docstring (missing-docstring)",
+        "W0612": "Unused variable 'OpenSSL' (unused-variable)",
+        "W0221": "Parameters differ from overridden 'dispatch_request' method (arguments-differ)",
+        "W0123": "Use of eval (eval-used)",
+        "W0622": "Redefining built-in 'type' (redefined-builtin)",
+        "W0122": "Use of exec (exec-used)",
+        "E1102": "request_close is not callable (not-callable)",
+        "W0231": "__init__ method from base class 'AssertionError' is not called (super-init-not-called)",
+        "R0914": "Too many local variables (17/15) (too-many-locals)",
+        "R0915": "Too many statements (79/50) (too-many-statements)",
+        "W0223": "Method '__setitem__' is abstract in class 'MutableMapping' but is not overridden (abstract-method)",
+        "E0202": "An attribute defined in json.encoder line 158 hides this method (method-hidden)",
+        "R0911": "Too many return statements (10/6) (too-many-return-statements)",
+        "R0901": "Too many ancestors (8/7) (too-many-ancestors)",
+        "W1113": "Keyword argument before variable positional arguments list in the definition of __init__ function (keyword-arg-before-vararg)",
+        "C0412": "Imports from package collections are not grouped (ungrouped-imports)",
+        "E0611": "No name 'json' in module 'werkzeug.wrappers' (no-name-in-module)",
+        "E0401": "Unable to import 'cStringIO' (import-error)",
+        "C0204": "Metaclass class method __new__ should have 'cls' as first argument (bad-mcs-classmethod-argument)",
+        "W0706": "The except handler raises immediately (try-except-raise)",
+        "W0611": "Unused fspath imported from os (unused-import)"
+    }
+}
