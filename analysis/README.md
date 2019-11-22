@@ -14,4 +14,4 @@ https://pypi.org/project/radon/
 1. radon mi -s -j -O mi.json ./src/flask 
 
 ### PyLint
-1. python3 -m pylint -f json -r y flask > pylint.json
+1. python3 ./pylint/run_python.py
