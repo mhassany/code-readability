@@ -1,3 +1,5 @@
+analysis/comments/jsons/
+
 .DS_Store
 .env
 .flaskenv
