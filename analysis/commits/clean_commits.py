@@ -4,7 +4,7 @@ import re
 from collections import namedtuple, defaultdict
 
 
-def __token(commit, i_str, e_str, default):
+def __substr(commit, i_str, e_str, default):
     _i = commit.find(i_str)
 
     if _i >= 0:
@@ -15,12 +15,12 @@ def __token(commit, i_str, e_str, default):
         return commit, default
 
 
-def parse(commit):
-    commit, commit_id = __token(commit, "commit ", "\n", None)  # find the id
-    commit, merge_id = __token(commit, "Merge: ", "\n", None)  # find the merge
-    commit, author = __token(commit, "Author: ", "\n", None)  # find the author
-    commit, date = __token(commit, "Date: ", "\n", None)  # find the date
-    commit, comment = __token(commit, "\n\n", "\n\n", None)  # find the comment
+def parse_commit(commit):
+    commit, commit_id = __substr(commit, "commit ", "\n", None)  # find the id
+    commit, merge_id = __substr(commit, "Merge: ", "\n", None)  # find the merge
+    commit, author = __substr(commit, "Author: ", "\n", None)  # find the author
+    commit, date = __substr(commit, "Date: ", "\n", None)  # find the date
+    commit, comment = __substr(commit, "\n\n", "\n\n", None)  # find the comment
 
     # find the summary
     change_summary = list(re.finditer(
@@ -67,13 +67,13 @@ def commits():
 
     for line in all_commits:
         if line.startswith("commit ") and len(commit) > 0:
-            yield parse(commit)
+            yield parse_commit(commit)
             commit = line
         else:
             commit += line
 
 
-def print_list():
+def print_commits_list():
     for commit in commits():
         print("\tCommit:", commit.commit)
         print("\tMerge:", commit.merge)
@@ -96,10 +96,9 @@ def print_list():
         print()
 
 
-def aggregate_changes():
-    # TODO aggreate file changes to generate lists and graphs
-    ""
-    # -- sorted file by number of time changed
+def get_file_commits():
+    """ yeild file name, count """
+    # file => (add+del) count
     files = defaultdict(int)
 
     for commit in commits():
@@ -109,7 +108,29 @@ def aggregate_changes():
     sorted_files = sorted(files.items(), key=lambda kv: kv[1], reverse=True)
 
     for file in sorted_files:
-        print(file[1], file[0])
+        # file name, count
+        yield file
 
 
-aggregate_changes()
+def get_file_contributors(file_name):
+    """ yeild contributor, change count, changes date """
+    # -- sorted contributors by number of commits(changes)
+    contributors = defaultdict(int)
+    contributed_at = defaultdict(list)
+
+    for commit in commits():
+        for file in commit.files:
+            if file.name == file_name:
+                contributors[commit.author] += 1
+                contributed_at[commit.author].append(commit.date)
+
+    sorted_contributors = sorted(
+        contributors.items(), key=lambda kv: kv[1], reverse=True)
+
+    for contributor in sorted_contributors:
+        # contributor, change count, changes date
+        yield contributor[0], contributor[1], contributed_at[contributor[0]]
+
+
+for l in get_file_contributors("flask/app.py"):
+    print(l)
