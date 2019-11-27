@@ -7,8 +7,6 @@ logging.basicConfig(level=logging.DEBUG)
 ISSUES_FOR_REPO_URL = 'https://api.github.com/repos/pallets/flask/issues?state=all'
 AUTH = ("YOUR_GITHUB_USERNAME", "YOUR_GITHUB_PASSWORD")
 
-# all_issues = []
-
 
 def write_issues(r):
     if not r.status_code == 200:
