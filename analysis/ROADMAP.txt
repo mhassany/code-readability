@@ -1,0 +1,24 @@
+1. calculate raw metrics for files
+    - cc
+    - hal
+    - mi
+    - pylint
+    - loc,comment,...
+
+2. get top few changed files
+    - by commit count
+    - by line changes count
+
+3. cross check the result of step1, and 2
+   and narrow down the list of files to few (20)
+    - make sure those files still exists in the repo
+
+4. get number of contributors for each of those files 
+   people who contributed in last 2 year (active contributors)
+
+5. check the issues to see # of readability related issues (comments)
+   also bugs, and complexity (indirect relation)
+    - find the related file
+    - cross check it with previous file list
+
+6. now we have a list of files that need to be check for readability

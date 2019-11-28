@@ -1,14 +1,14 @@
 {
-    "flask/app.py": {
-        "loc": 2455,
+    "src/flask/app.py": {
+        "loc": 2450,
         "lloc": 741,
         "sloc": 832,
-        "comments": 323,
+        "comments": 318,
         "multi": 882,
         "blank": 422,
-        "single_comments": 319
+        "single_comments": 314
     },
-    "flask/blueprints.py": {
+    "src/flask/blueprints.py": {
         "loc": 569,
         "lloc": 230,
         "sloc": 242,
@@ -17,16 +17,16 @@
         "blank": 101,
         "single_comments": 28
     },
-    "flask/cli.py": {
-        "loc": 971,
+    "src/flask/cli.py": {
+        "loc": 972,
         "lloc": 472,
         "sloc": 601,
         "comments": 50,
         "multi": 126,
-        "blank": 200,
+        "blank": 201,
         "single_comments": 44
     },
-    "flask/config.py": {
+    "src/flask/config.py": {
         "loc": 301,
         "lloc": 107,
         "sloc": 108,
@@ -35,7 +35,7 @@
         "blank": 61,
         "single_comments": 2
     },
-    "flask/ctx.py": {
+    "src/flask/ctx.py": {
         "loc": 475,
         "lloc": 182,
         "sloc": 184,
@@ -44,7 +44,7 @@
         "blank": 99,
         "single_comments": 44
     },
-    "flask/debughelpers.py": {
+    "src/flask/debughelpers.py": {
         "loc": 183,
         "lloc": 99,
         "sloc": 128,
@@ -53,7 +53,7 @@
         "blank": 31,
         "single_comments": 3
     },
-    "flask/globals.py": {
+    "src/flask/globals.py": {
         "loc": 62,
         "lloc": 27,
         "sloc": 37,
@@ -62,16 +62,16 @@
         "blank": 15,
         "single_comments": 2
     },
-    "flask/helpers.py": {
-        "loc": 1153,
-        "lloc": 424,
-        "sloc": 475,
+    "src/flask/helpers.py": {
+        "loc": 1165,
+        "lloc": 425,
+        "sloc": 476,
         "comments": 89,
-        "multi": 376,
-        "blank": 212,
+        "multi": 382,
+        "blank": 217,
         "single_comments": 90
     },
-    "flask/logging.py": {
+    "src/flask/logging.py": {
         "loc": 109,
         "lloc": 40,
         "sloc": 47,
@@ -80,7 +80,7 @@
         "blank": 28,
         "single_comments": 5
     },
-    "flask/sessions.py": {
+    "src/flask/sessions.py": {
         "loc": 394,
         "lloc": 150,
         "sloc": 162,
@@ -89,7 +89,7 @@
         "blank": 78,
         "single_comments": 51
     },
-    "flask/signals.py": {
+    "src/flask/signals.py": {
         "loc": 65,
         "lloc": 33,
         "sloc": 34,
@@ -98,7 +98,7 @@
         "blank": 13,
         "single_comments": 5
     },
-    "flask/templating.py": {
+    "src/flask/templating.py": {
         "loc": 155,
         "lloc": 92,
         "sloc": 89,
@@ -107,7 +107,7 @@
         "blank": 32,
         "single_comments": 2
     },
-    "flask/testing.py": {
+    "src/flask/testing.py": {
         "loc": 283,
         "lloc": 114,
         "sloc": 146,
@@ -116,7 +116,7 @@
         "blank": 50,
         "single_comments": 12
     },
-    "flask/views.py": {
+    "src/flask/views.py": {
         "loc": 163,
         "lloc": 52,
         "sloc": 48,
@@ -125,7 +125,7 @@
         "blank": 37,
         "single_comments": 23
     },
-    "flask/wrappers.py": {
+    "src/flask/wrappers.py": {
         "loc": 137,
         "lloc": 49,
         "sloc": 47,
@@ -134,7 +134,7 @@
         "blank": 31,
         "single_comments": 22
     },
-    "flask/_compat.py": {
+    "src/flask/_compat.py": {
         "loc": 145,
         "lloc": 91,
         "sloc": 83,
@@ -143,7 +143,7 @@
         "blank": 32,
         "single_comments": 21
     },
-    "flask/__init__.py": {
+    "src/flask/__init__.py": {
         "loc": 60,
         "lloc": 46,
         "sloc": 45,
@@ -152,7 +152,7 @@
         "blank": 4,
         "single_comments": 3
     },
-    "flask/__main__.py": {
+    "src/flask/__main__.py": {
         "loc": 15,
         "lloc": 4,
         "sloc": 3,
@@ -161,7 +161,7 @@
         "blank": 4,
         "single_comments": 1
     },
-    "flask/json/tag.py": {
+    "src/flask/json/tag.py": {
         "loc": 309,
         "lloc": 147,
         "sloc": 142,
@@ -170,7 +170,7 @@
         "blank": 87,
         "single_comments": 14
     },
-    "flask/json/__init__.py": {
+    "src/flask/json/__init__.py": {
         "loc": 376,
         "lloc": 147,
         "sloc": 155,

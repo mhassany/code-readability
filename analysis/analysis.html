@@ -13120,7 +13120,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">prettytable</span> <span class="k">import</span> <span class="n">PrettyTable</span>
@@ -13177,278 +13177,278 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>==&gt; Cyclomatic Complexity By File/Function:
-+------------------------+--------------------------------------------+------------+
-| File                   | Function                                   | Complexity |
-+------------------------+--------------------------------------------+------------+
-| flask/app.py           | make_response                              |     15     |
-| flask/app.py           | add_url_rule                               |     12     |
-| flask/app.py           | run                                        |     11     |
-| flask/testing.py       | __init__                                   |     10     |
-| flask/app.py           | handle_user_exception                      |     10     |
-| flask/ctx.py           | push                                       |     9      |
-| flask/sessions.py      | get_cookie_domain                          |     8      |
-| flask/ctx.py           | pop                                        |     8      |
-| flask/cli.py           | load_app                                   |     8      |
-| flask/cli.py           | convert                                    |     8      |
-| flask/app.py           | preprocess_request                         |     8      |
-| flask/views.py         | __init__                                   |     7      |
-| flask/json/__init__.py | default                                    |     7      |
-| flask/config.py        | from_mapping                               |     7      |
-| flask/blueprints.py    | register                                   |     6      |
-| flask/blueprints.py    | add_url_rule                               |     6      |
-| flask/app.py           | trap_http_exception                        |     6      |
-| flask/app.py           | process_response                           |     6      |
-| flask/wrappers.py      | _load_form_data                            |     5      |
-| flask/testing.py       | open                                       |     5      |
-| flask/templating.py    | list_templates                             |     5      |
-| flask/templating.py    | _get_source_explained                      |     5      |
-| flask/sessions.py      | save_session                               |     5      |
-| flask/json/tag.py      | register                                   |     5      |
-| flask/config.py        | get_namespace                              |     5      |
-| flask/blueprints.py    | add_url_rule                               |     5      |
-| flask/app.py           | update_template_context                    |     5      |
-| flask/app.py           | handle_url_build_error                     |     5      |
-| flask/app.py           | do_teardown_request                        |     5      |
-| flask/app.py           | create_url_adapter                         |     5      |
-| flask/app.py           | _find_error_handler                        |     5      |
-| flask/app.py           | __init__                                   |     5      |
-| flask/views.py         | dispatch_request                           |     4      |
-| flask/testing.py       | session_transaction                        |     4      |
-| flask/testing.py       | __exit__                                   |     4      |
-| flask/templating.py    | _iter_loaders                              |     4      |
-| flask/sessions.py      | open_session                               |     4      |
-| flask/ctx.py           | pop                                        |     4      |
-| flask/ctx.py           | auto_pop                                   |     4      |
-| flask/config.py        | from_pyfile                                |     4      |
-| flask/config.py        | from_object                                |     4      |
-| flask/config.py        | from_file                                  |     4      |
-| flask/cli.py           | get_command                                |     4      |
-| flask/cli.py           | _load_plugin_commands                      |     4      |
-| flask/cli.py           | __init__                                   |     4      |
-| flask/app.py           | wsgi_app                                   |     4      |
-| flask/app.py           | try_trigger_before_first_request_functions |     4      |
-| flask/app.py           | raise_routing_exception                    |     4      |
-| flask/app.py           | handle_http_exception                      |     4      |
-| flask/app.py           | handle_exception                           |     4      |
-| flask/app.py           | dispatch_request                           |     4      |
-| flask/app.py           | _get_exc_class_and_code                    |     4      |
-| flask/wrappers.py      | on_json_loading_failed                     |     3      |
-| flask/wrappers.py      | blueprint                                  |     3      |
-| flask/views.py         | as_view                                    |     3      |
-| flask/testing.py       | invoke                                     |     3      |
-| flask/templating.py    | _get_source_fast                           |     3      |
-| flask/sessions.py      | should_set_cookie                          |     3      |
-| flask/json/tag.py      | untag                                      |     3      |
-| flask/json/tag.py      | tag                                        |     3      |
-| flask/json/tag.py      | check                                      |     3      |
-| flask/helpers.py       | static_url_path                            |     3      |
-| flask/helpers.py       | __init__                                   |     3      |
-| flask/helpers.py       | __get__                                    |     3      |
-| flask/debughelpers.py  | __init__                                   |     3      |
-| flask/ctx.py           | __init__                                   |     3      |
-| flask/ctx.py           | __exit__                                   |     3      |
-| flask/ctx.py           | __exit__                                   |     3      |
-| flask/config.py        | from_envvar                                |     3      |
-| flask/config.py        | __get__                                    |     3      |
-| flask/cli.py           | main                                       |     3      |
-| flask/cli.py           | __call__                                   |     3      |
-| flask/blueprints.py    | record                                     |     3      |
-| flask/blueprints.py    | __init__                                   |     3      |
-| flask/app.py           | register_blueprint                         |     3      |
-| flask/app.py           | propagate_exceptions                       |     3      |
-| flask/app.py           | name                                       |     3      |
-| flask/app.py           | inject_url_defaults                        |     3      |
-| flask/app.py           | full_dispatch_request                      |     3      |
-| flask/app.py           | finalize_request                           |     3      |
-| flask/app.py           | do_teardown_appcontext                     |     3      |
-| flask/app.py           | create_jinja_environment                   |     3      |
-| flask/app.py           | _register_error_handler                    |     3      |
-| flask/wrappers.py      | max_cookie_size                            |     2      |
-| flask/wrappers.py      | max_content_length                         |     2      |
-| flask/wrappers.py      | endpoint                                   |     2      |
-| flask/testing.py       | __enter__                                  |     2      |
-| flask/templating.py    | get_source                                 |     2      |
-| flask/templating.py    | __init__                                   |     2      |
-| flask/sessions.py      | get_signing_serializer                     |     2      |
-| flask/sessions.py      | get_expiration_time                        |     2      |
-| flask/sessions.py      | get_cookie_path                            |     2      |
-| flask/json/tag.py      | to_json                                    |     2      |
-| flask/json/tag.py      | to_json                                    |     2      |
-| flask/json/tag.py      | to_json                                    |     2      |
-| flask/json/tag.py      | __init__                                   |     2      |
-| flask/helpers.py       | static_url_path                            |     2      |
-| flask/helpers.py       | static_folder                              |     2      |
-| flask/helpers.py       | send_static_file                           |     2      |
-| flask/helpers.py       | open_resource                              |     2      |
-| flask/helpers.py       | jinja_loader                               |     2      |
-| flask/helpers.py       | __init__                                   |     2      |
-| flask/debughelpers.py  | __init__                                   |     2      |
-| flask/ctx.py           | push                                       |     2      |
-| flask/ctx.py           | pop                                        |     2      |
-| flask/ctx.py           | match_request                              |     2      |
-| flask/ctx.py           | __repr__                                   |     2      |
-| flask/config.py        | __init__                                   |     2      |
-| flask/cli.py           | list_commands                              |     2      |
-| flask/cli.py           | convert                                    |     2      |
-| flask/cli.py           | _flush_bg_loading_exception                |     2      |
-| flask/cli.py           | __init__                                   |     2      |
-| flask/cli.py           | __init__                                   |     2      |
-| flask/blueprints.py    | __init__                                   |     2      |
-| flask/app.py           | test_client                                |     2      |
-| flask/app.py           | test_cli_runner                            |     2      |
-| flask/app.py           | templates_auto_reload                      |     2      |
-| flask/app.py           | select_jinja_autoescape                    |     2      |
-| flask/app.py           | preserve_context_on_exception              |     2      |
-| flask/app.py           | make_shell_context                         |     2      |
-| flask/app.py           | make_config                                |     2      |
-| flask/app.py           | auto_find_instance_path                    |     2      |
-| flask/app.py           | add_template_test                          |     2      |
-| flask/app.py           | add_template_global                        |     2      |
-| flask/app.py           | add_template_filter                        |     2      |
-| flask/_compat.py       | __exit__                                   |     2      |
-| flask/wrappers.py      | _get_data_for_json                         |     1      |
-| flask/views.py         | dispatch_request                           |     1      |
-| flask/testing.py       | json_dumps                                 |     1      |
-| flask/testing.py       | __init__                                   |     1      |
-| flask/testing.py       | __init__                                   |     1      |
-| flask/templating.py    | __init__                                   |     1      |
-| flask/signals.py       | signal                                     |     1      |
-| flask/signals.py       | send                                       |     1      |
-| flask/signals.py       | _fail                                      |     1      |
-| flask/signals.py       | __init__                                   |     1      |
-| flask/sessions.py      | setdefault                                 |     1      |
-| flask/sessions.py      | save_session                               |     1      |
-| flask/sessions.py      | permanent                                  |     1      |
-| flask/sessions.py      | permanent                                  |     1      |
-| flask/sessions.py      | open_session                               |     1      |
-| flask/sessions.py      | make_null_session                          |     1      |
-| flask/sessions.py      | is_null_session                            |     1      |
-| flask/sessions.py      | get_cookie_secure                          |     1      |
-| flask/sessions.py      | get_cookie_samesite                        |     1      |
-| flask/sessions.py      | get_cookie_name                            |     1      |
-| flask/sessions.py      | get_cookie_httponly                        |     1      |
-| flask/sessions.py      | get                                        |     1      |
-| flask/sessions.py      | _fail                                      |     1      |
-| flask/sessions.py      | __init__                                   |     1      |
-| flask/sessions.py      | __getitem__                                |     1      |
-| flask/json/tag.py      | to_python                                  |     1      |
-| flask/json/tag.py      | to_python                                  |     1      |
-| flask/json/tag.py      | to_python                                  |     1      |
-| flask/json/tag.py      | to_python                                  |     1      |
-| flask/json/tag.py      | to_python                                  |     1      |
-| flask/json/tag.py      | to_python                                  |     1      |
-| flask/json/tag.py      | to_python                                  |     1      |
-| flask/json/tag.py      | to_json                                    |     1      |
-| flask/json/tag.py      | to_json                                    |     1      |
-| flask/json/tag.py      | to_json                                    |     1      |
-| flask/json/tag.py      | to_json                                    |     1      |
-| flask/json/tag.py      | to_json                                    |     1      |
-| flask/json/tag.py      | to_json                                    |     1      |
-| flask/json/tag.py      | tag                                        |     1      |
-| flask/json/tag.py      | loads                                      |     1      |
-| flask/json/tag.py      | dumps                                      |     1      |
-| flask/json/tag.py      | check                                      |     1      |
-| flask/json/tag.py      | check                                      |     1      |
-| flask/json/tag.py      | check                                      |     1      |
-| flask/json/tag.py      | check                                      |     1      |
-| flask/json/tag.py      | check                                      |     1      |
-| flask/json/tag.py      | check                                      |     1      |
-| flask/json/tag.py      | check                                      |     1      |
-| flask/json/tag.py      | check                                      |     1      |
-| flask/json/tag.py      | __init__                                   |     1      |
-| flask/helpers.py       | static_folder                              |     1      |
-| flask/helpers.py       | has_static_folder                          |     1      |
-| flask/helpers.py       | get_send_file_max_age                      |     1      |
-| flask/debughelpers.py  | __str__                                    |     1      |
-| flask/ctx.py           | setdefault                                 |     1      |
-| flask/ctx.py           | get                                        |     1      |
-| flask/ctx.py           | g                                          |     1      |
-| flask/ctx.py           | g                                          |     1      |
-| flask/ctx.py           | copy                                       |     1      |
-| flask/ctx.py           | __repr__                                   |     1      |
-| flask/ctx.py           | __iter__                                   |     1      |
-| flask/ctx.py           | __init__                                   |     1      |
-| flask/ctx.py           | __enter__                                  |     1      |
-| flask/ctx.py           | __enter__                                  |     1      |
-| flask/ctx.py           | __contains__                               |     1      |
-| flask/config.py        | from_json                                  |     1      |
-| flask/config.py        | __set__                                    |     1      |
-| flask/config.py        | __repr__                                   |     1      |
-| flask/config.py        | __init__                                   |     1      |
-| flask/cli.py           | group                                      |     1      |
-| flask/cli.py           | command                                    |     1      |
-| flask/cli.py           | _load_unlocked                             |     1      |
-| flask/cli.py           | _load_in_background                        |     1      |
-| flask/cli.py           | __init__                                   |     1      |
-| flask/blueprints.py    | url_value_preprocessor                     |     1      |
-| flask/blueprints.py    | url_defaults                               |     1      |
-| flask/blueprints.py    | teardown_request                           |     1      |
-| flask/blueprints.py    | teardown_app_request                       |     1      |
-| flask/blueprints.py    | route                                      |     1      |
-| flask/blueprints.py    | register_error_handler                     |     1      |
-| flask/blueprints.py    | record_once                                |     1      |
-| flask/blueprints.py    | make_setup_state                           |     1      |
-| flask/blueprints.py    | errorhandler                               |     1      |
-| flask/blueprints.py    | endpoint                                   |     1      |
-| flask/blueprints.py    | context_processor                          |     1      |
-| flask/blueprints.py    | before_request                             |     1      |
-| flask/blueprints.py    | before_app_request                         |     1      |
-| flask/blueprints.py    | before_app_first_request                   |     1      |
-| flask/blueprints.py    | app_url_value_preprocessor                 |     1      |
-| flask/blueprints.py    | app_url_defaults                           |     1      |
-| flask/blueprints.py    | app_template_test                          |     1      |
-| flask/blueprints.py    | app_template_global                        |     1      |
-| flask/blueprints.py    | app_template_filter                        |     1      |
-| flask/blueprints.py    | app_errorhandler                           |     1      |
-| flask/blueprints.py    | app_context_processor                      |     1      |
-| flask/blueprints.py    | after_request                              |     1      |
-| flask/blueprints.py    | after_app_request                          |     1      |
-| flask/blueprints.py    | add_app_template_test                      |     1      |
-| flask/blueprints.py    | add_app_template_global                    |     1      |
-| flask/blueprints.py    | add_app_template_filter                    |     1      |
-| flask/app.py           | url_value_preprocessor                     |     1      |
-| flask/app.py           | url_defaults                               |     1      |
-| flask/app.py           | test_request_context                       |     1      |
-| flask/app.py           | templates_auto_reload                      |     1      |
-| flask/app.py           | template_test                              |     1      |
-| flask/app.py           | template_global                            |     1      |
-| flask/app.py           | template_filter                            |     1      |
-| flask/app.py           | teardown_request                           |     1      |
-| flask/app.py           | teardown_appcontext                        |     1      |
-| flask/app.py           | should_ignore_error                        |     1      |
-| flask/app.py           | shell_context_processor                    |     1      |
-| flask/app.py           | save_session                               |     1      |
-| flask/app.py           | route                                      |     1      |
-| flask/app.py           | request_context                            |     1      |
-| flask/app.py           | register_error_handler                     |     1      |
-| flask/app.py           | open_session                               |     1      |
-| flask/app.py           | open_instance_resource                     |     1      |
-| flask/app.py           | make_null_session                          |     1      |
-| flask/app.py           | make_default_options_response              |     1      |
-| flask/app.py           | logger                                     |     1      |
-| flask/app.py           | log_exception                              |     1      |
-| flask/app.py           | jinja_env                                  |     1      |
-| flask/app.py           | iter_blueprints                            |     1      |
-| flask/app.py           | got_first_request                          |     1      |
-| flask/app.py           | errorhandler                               |     1      |
-| flask/app.py           | endpoint                                   |     1      |
-| flask/app.py           | debug                                      |     1      |
-| flask/app.py           | debug                                      |     1      |
-| flask/app.py           | create_global_jinja_loader                 |     1      |
-| flask/app.py           | context_processor                          |     1      |
-| flask/app.py           | before_request                             |     1      |
-| flask/app.py           | before_first_request                       |     1      |
-| flask/app.py           | app_context                                |     1      |
-| flask/app.py           | after_request                              |     1      |
-| flask/app.py           | __repr__                                   |     1      |
-| flask/app.py           | __call__                                   |     1      |
-| flask/_compat.py       | _warn                                      |     1      |
-| flask/_compat.py       | __ne__                                     |     1      |
-| flask/_compat.py       | __init__                                   |     1      |
-| flask/_compat.py       | __eq__                                     |     1      |
-| flask/_compat.py       | __enter__                                  |     1      |
-| flask/_compat.py       | __bool__                                   |     1      |
-+------------------------+--------------------------------------------+------------+
++----------------------------+--------------------------------------------+------------+
+| File                       | Function                                   | Complexity |
++----------------------------+--------------------------------------------+------------+
+| src/flask/app.py           | make_response                              |     15     |
+| src/flask/app.py           | add_url_rule                               |     12     |
+| src/flask/app.py           | run                                        |     11     |
+| src/flask/testing.py       | __init__                                   |     10     |
+| src/flask/app.py           | handle_user_exception                      |     10     |
+| src/flask/ctx.py           | push                                       |     9      |
+| src/flask/sessions.py      | get_cookie_domain                          |     8      |
+| src/flask/ctx.py           | pop                                        |     8      |
+| src/flask/cli.py           | load_app                                   |     8      |
+| src/flask/cli.py           | convert                                    |     8      |
+| src/flask/app.py           | preprocess_request                         |     8      |
+| src/flask/views.py         | __init__                                   |     7      |
+| src/flask/json/__init__.py | default                                    |     7      |
+| src/flask/config.py        | from_mapping                               |     7      |
+| src/flask/blueprints.py    | register                                   |     6      |
+| src/flask/blueprints.py    | add_url_rule                               |     6      |
+| src/flask/app.py           | trap_http_exception                        |     6      |
+| src/flask/app.py           | process_response                           |     6      |
+| src/flask/wrappers.py      | _load_form_data                            |     5      |
+| src/flask/testing.py       | open                                       |     5      |
+| src/flask/templating.py    | list_templates                             |     5      |
+| src/flask/templating.py    | _get_source_explained                      |     5      |
+| src/flask/sessions.py      | save_session                               |     5      |
+| src/flask/json/tag.py      | register                                   |     5      |
+| src/flask/config.py        | get_namespace                              |     5      |
+| src/flask/blueprints.py    | add_url_rule                               |     5      |
+| src/flask/app.py           | update_template_context                    |     5      |
+| src/flask/app.py           | handle_url_build_error                     |     5      |
+| src/flask/app.py           | do_teardown_request                        |     5      |
+| src/flask/app.py           | create_url_adapter                         |     5      |
+| src/flask/app.py           | _find_error_handler                        |     5      |
+| src/flask/app.py           | __init__                                   |     5      |
+| src/flask/views.py         | dispatch_request                           |     4      |
+| src/flask/testing.py       | session_transaction                        |     4      |
+| src/flask/testing.py       | __exit__                                   |     4      |
+| src/flask/templating.py    | _iter_loaders                              |     4      |
+| src/flask/sessions.py      | open_session                               |     4      |
+| src/flask/ctx.py           | pop                                        |     4      |
+| src/flask/ctx.py           | auto_pop                                   |     4      |
+| src/flask/config.py        | from_pyfile                                |     4      |
+| src/flask/config.py        | from_object                                |     4      |
+| src/flask/config.py        | from_file                                  |     4      |
+| src/flask/cli.py           | get_command                                |     4      |
+| src/flask/cli.py           | _load_plugin_commands                      |     4      |
+| src/flask/cli.py           | __init__                                   |     4      |
+| src/flask/app.py           | wsgi_app                                   |     4      |
+| src/flask/app.py           | try_trigger_before_first_request_functions |     4      |
+| src/flask/app.py           | raise_routing_exception                    |     4      |
+| src/flask/app.py           | handle_http_exception                      |     4      |
+| src/flask/app.py           | handle_exception                           |     4      |
+| src/flask/app.py           | dispatch_request                           |     4      |
+| src/flask/app.py           | _get_exc_class_and_code                    |     4      |
+| src/flask/wrappers.py      | on_json_loading_failed                     |     3      |
+| src/flask/wrappers.py      | blueprint                                  |     3      |
+| src/flask/views.py         | as_view                                    |     3      |
+| src/flask/testing.py       | invoke                                     |     3      |
+| src/flask/templating.py    | _get_source_fast                           |     3      |
+| src/flask/sessions.py      | should_set_cookie                          |     3      |
+| src/flask/json/tag.py      | untag                                      |     3      |
+| src/flask/json/tag.py      | tag                                        |     3      |
+| src/flask/json/tag.py      | check                                      |     3      |
+| src/flask/helpers.py       | static_url_path                            |     3      |
+| src/flask/helpers.py       | __init__                                   |     3      |
+| src/flask/helpers.py       | __get__                                    |     3      |
+| src/flask/debughelpers.py  | __init__                                   |     3      |
+| src/flask/ctx.py           | __init__                                   |     3      |
+| src/flask/ctx.py           | __exit__                                   |     3      |
+| src/flask/ctx.py           | __exit__                                   |     3      |
+| src/flask/config.py        | from_envvar                                |     3      |
+| src/flask/config.py        | __get__                                    |     3      |
+| src/flask/cli.py           | main                                       |     3      |
+| src/flask/cli.py           | __init__                                   |     3      |
+| src/flask/cli.py           | __call__                                   |     3      |
+| src/flask/blueprints.py    | record                                     |     3      |
+| src/flask/blueprints.py    | __init__                                   |     3      |
+| src/flask/app.py           | register_blueprint                         |     3      |
+| src/flask/app.py           | propagate_exceptions                       |     3      |
+| src/flask/app.py           | name                                       |     3      |
+| src/flask/app.py           | inject_url_defaults                        |     3      |
+| src/flask/app.py           | full_dispatch_request                      |     3      |
+| src/flask/app.py           | finalize_request                           |     3      |
+| src/flask/app.py           | do_teardown_appcontext                     |     3      |
+| src/flask/app.py           | create_jinja_environment                   |     3      |
+| src/flask/app.py           | _register_error_handler                    |     3      |
+| src/flask/wrappers.py      | max_cookie_size                            |     2      |
+| src/flask/wrappers.py      | max_content_length                         |     2      |
+| src/flask/wrappers.py      | endpoint                                   |     2      |
+| src/flask/testing.py       | __enter__                                  |     2      |
+| src/flask/templating.py    | get_source                                 |     2      |
+| src/flask/templating.py    | __init__                                   |     2      |
+| src/flask/sessions.py      | get_signing_serializer                     |     2      |
+| src/flask/sessions.py      | get_expiration_time                        |     2      |
+| src/flask/sessions.py      | get_cookie_path                            |     2      |
+| src/flask/json/tag.py      | to_json                                    |     2      |
+| src/flask/json/tag.py      | to_json                                    |     2      |
+| src/flask/json/tag.py      | to_json                                    |     2      |
+| src/flask/json/tag.py      | __init__                                   |     2      |
+| src/flask/helpers.py       | static_url_path                            |     2      |
+| src/flask/helpers.py       | static_folder                              |     2      |
+| src/flask/helpers.py       | send_static_file                           |     2      |
+| src/flask/helpers.py       | open_resource                              |     2      |
+| src/flask/helpers.py       | jinja_loader                               |     2      |
+| src/flask/helpers.py       | __init__                                   |     2      |
+| src/flask/debughelpers.py  | __init__                                   |     2      |
+| src/flask/ctx.py           | push                                       |     2      |
+| src/flask/ctx.py           | pop                                        |     2      |
+| src/flask/ctx.py           | match_request                              |     2      |
+| src/flask/ctx.py           | __repr__                                   |     2      |
+| src/flask/config.py        | __init__                                   |     2      |
+| src/flask/cli.py           | list_commands                              |     2      |
+| src/flask/cli.py           | convert                                    |     2      |
+| src/flask/cli.py           | _flush_bg_loading_exception                |     2      |
+| src/flask/cli.py           | __init__                                   |     2      |
+| src/flask/blueprints.py    | __init__                                   |     2      |
+| src/flask/app.py           | test_client                                |     2      |
+| src/flask/app.py           | test_cli_runner                            |     2      |
+| src/flask/app.py           | templates_auto_reload                      |     2      |
+| src/flask/app.py           | select_jinja_autoescape                    |     2      |
+| src/flask/app.py           | preserve_context_on_exception              |     2      |
+| src/flask/app.py           | make_shell_context                         |     2      |
+| src/flask/app.py           | make_config                                |     2      |
+| src/flask/app.py           | auto_find_instance_path                    |     2      |
+| src/flask/app.py           | add_template_test                          |     2      |
+| src/flask/app.py           | add_template_global                        |     2      |
+| src/flask/app.py           | add_template_filter                        |     2      |
+| src/flask/_compat.py       | __exit__                                   |     2      |
+| src/flask/wrappers.py      | _get_data_for_json                         |     1      |
+| src/flask/views.py         | dispatch_request                           |     1      |
+| src/flask/testing.py       | json_dumps                                 |     1      |
+| src/flask/testing.py       | __init__                                   |     1      |
+| src/flask/testing.py       | __init__                                   |     1      |
+| src/flask/templating.py    | __init__                                   |     1      |
+| src/flask/signals.py       | signal                                     |     1      |
+| src/flask/signals.py       | send                                       |     1      |
+| src/flask/signals.py       | _fail                                      |     1      |
+| src/flask/signals.py       | __init__                                   |     1      |
+| src/flask/sessions.py      | setdefault                                 |     1      |
+| src/flask/sessions.py      | save_session                               |     1      |
+| src/flask/sessions.py      | permanent                                  |     1      |
+| src/flask/sessions.py      | permanent                                  |     1      |
+| src/flask/sessions.py      | open_session                               |     1      |
+| src/flask/sessions.py      | make_null_session                          |     1      |
+| src/flask/sessions.py      | is_null_session                            |     1      |
+| src/flask/sessions.py      | get_cookie_secure                          |     1      |
+| src/flask/sessions.py      | get_cookie_samesite                        |     1      |
+| src/flask/sessions.py      | get_cookie_name                            |     1      |
+| src/flask/sessions.py      | get_cookie_httponly                        |     1      |
+| src/flask/sessions.py      | get                                        |     1      |
+| src/flask/sessions.py      | _fail                                      |     1      |
+| src/flask/sessions.py      | __init__                                   |     1      |
+| src/flask/sessions.py      | __getitem__                                |     1      |
+| src/flask/json/tag.py      | to_python                                  |     1      |
+| src/flask/json/tag.py      | to_python                                  |     1      |
+| src/flask/json/tag.py      | to_python                                  |     1      |
+| src/flask/json/tag.py      | to_python                                  |     1      |
+| src/flask/json/tag.py      | to_python                                  |     1      |
+| src/flask/json/tag.py      | to_python                                  |     1      |
+| src/flask/json/tag.py      | to_python                                  |     1      |
+| src/flask/json/tag.py      | to_json                                    |     1      |
+| src/flask/json/tag.py      | to_json                                    |     1      |
+| src/flask/json/tag.py      | to_json                                    |     1      |
+| src/flask/json/tag.py      | to_json                                    |     1      |
+| src/flask/json/tag.py      | to_json                                    |     1      |
+| src/flask/json/tag.py      | to_json                                    |     1      |
+| src/flask/json/tag.py      | tag                                        |     1      |
+| src/flask/json/tag.py      | loads                                      |     1      |
+| src/flask/json/tag.py      | dumps                                      |     1      |
+| src/flask/json/tag.py      | check                                      |     1      |
+| src/flask/json/tag.py      | check                                      |     1      |
+| src/flask/json/tag.py      | check                                      |     1      |
+| src/flask/json/tag.py      | check                                      |     1      |
+| src/flask/json/tag.py      | check                                      |     1      |
+| src/flask/json/tag.py      | check                                      |     1      |
+| src/flask/json/tag.py      | check                                      |     1      |
+| src/flask/json/tag.py      | check                                      |     1      |
+| src/flask/json/tag.py      | __init__                                   |     1      |
+| src/flask/helpers.py       | static_folder                              |     1      |
+| src/flask/helpers.py       | has_static_folder                          |     1      |
+| src/flask/helpers.py       | get_send_file_max_age                      |     1      |
+| src/flask/debughelpers.py  | __str__                                    |     1      |
+| src/flask/ctx.py           | setdefault                                 |     1      |
+| src/flask/ctx.py           | get                                        |     1      |
+| src/flask/ctx.py           | g                                          |     1      |
+| src/flask/ctx.py           | g                                          |     1      |
+| src/flask/ctx.py           | copy                                       |     1      |
+| src/flask/ctx.py           | __repr__                                   |     1      |
+| src/flask/ctx.py           | __iter__                                   |     1      |
+| src/flask/ctx.py           | __init__                                   |     1      |
+| src/flask/ctx.py           | __enter__                                  |     1      |
+| src/flask/ctx.py           | __enter__                                  |     1      |
+| src/flask/ctx.py           | __contains__                               |     1      |
+| src/flask/config.py        | from_json                                  |     1      |
+| src/flask/config.py        | __set__                                    |     1      |
+| src/flask/config.py        | __repr__                                   |     1      |
+| src/flask/config.py        | __init__                                   |     1      |
+| src/flask/cli.py           | group                                      |     1      |
+| src/flask/cli.py           | command                                    |     1      |
+| src/flask/cli.py           | _load_unlocked                             |     1      |
+| src/flask/cli.py           | _load_in_background                        |     1      |
+| src/flask/cli.py           | __init__                                   |     1      |
+| src/flask/blueprints.py    | url_value_preprocessor                     |     1      |
+| src/flask/blueprints.py    | url_defaults                               |     1      |
+| src/flask/blueprints.py    | teardown_request                           |     1      |
+| src/flask/blueprints.py    | teardown_app_request                       |     1      |
+| src/flask/blueprints.py    | route                                      |     1      |
+| src/flask/blueprints.py    | register_error_handler                     |     1      |
+| src/flask/blueprints.py    | record_once                                |     1      |
+| src/flask/blueprints.py    | make_setup_state                           |     1      |
+| src/flask/blueprints.py    | errorhandler                               |     1      |
+| src/flask/blueprints.py    | endpoint                                   |     1      |
+| src/flask/blueprints.py    | context_processor                          |     1      |
+| src/flask/blueprints.py    | before_request                             |     1      |
+| src/flask/blueprints.py    | before_app_request                         |     1      |
+| src/flask/blueprints.py    | before_app_first_request                   |     1      |
+| src/flask/blueprints.py    | app_url_value_preprocessor                 |     1      |
+| src/flask/blueprints.py    | app_url_defaults                           |     1      |
+| src/flask/blueprints.py    | app_template_test                          |     1      |
+| src/flask/blueprints.py    | app_template_global                        |     1      |
+| src/flask/blueprints.py    | app_template_filter                        |     1      |
+| src/flask/blueprints.py    | app_errorhandler                           |     1      |
+| src/flask/blueprints.py    | app_context_processor                      |     1      |
+| src/flask/blueprints.py    | after_request                              |     1      |
+| src/flask/blueprints.py    | after_app_request                          |     1      |
+| src/flask/blueprints.py    | add_app_template_test                      |     1      |
+| src/flask/blueprints.py    | add_app_template_global                    |     1      |
+| src/flask/blueprints.py    | add_app_template_filter                    |     1      |
+| src/flask/app.py           | url_value_preprocessor                     |     1      |
+| src/flask/app.py           | url_defaults                               |     1      |
+| src/flask/app.py           | test_request_context                       |     1      |
+| src/flask/app.py           | templates_auto_reload                      |     1      |
+| src/flask/app.py           | template_test                              |     1      |
+| src/flask/app.py           | template_global                            |     1      |
+| src/flask/app.py           | template_filter                            |     1      |
+| src/flask/app.py           | teardown_request                           |     1      |
+| src/flask/app.py           | teardown_appcontext                        |     1      |
+| src/flask/app.py           | should_ignore_error                        |     1      |
+| src/flask/app.py           | shell_context_processor                    |     1      |
+| src/flask/app.py           | save_session                               |     1      |
+| src/flask/app.py           | route                                      |     1      |
+| src/flask/app.py           | request_context                            |     1      |
+| src/flask/app.py           | register_error_handler                     |     1      |
+| src/flask/app.py           | open_session                               |     1      |
+| src/flask/app.py           | open_instance_resource                     |     1      |
+| src/flask/app.py           | make_null_session                          |     1      |
+| src/flask/app.py           | make_default_options_response              |     1      |
+| src/flask/app.py           | logger                                     |     1      |
+| src/flask/app.py           | log_exception                              |     1      |
+| src/flask/app.py           | jinja_env                                  |     1      |
+| src/flask/app.py           | iter_blueprints                            |     1      |
+| src/flask/app.py           | got_first_request                          |     1      |
+| src/flask/app.py           | errorhandler                               |     1      |
+| src/flask/app.py           | endpoint                                   |     1      |
+| src/flask/app.py           | debug                                      |     1      |
+| src/flask/app.py           | debug                                      |     1      |
+| src/flask/app.py           | create_global_jinja_loader                 |     1      |
+| src/flask/app.py           | context_processor                          |     1      |
+| src/flask/app.py           | before_request                             |     1      |
+| src/flask/app.py           | before_first_request                       |     1      |
+| src/flask/app.py           | app_context                                |     1      |
+| src/flask/app.py           | after_request                              |     1      |
+| src/flask/app.py           | __repr__                                   |     1      |
+| src/flask/app.py           | __call__                                   |     1      |
+| src/flask/_compat.py       | _warn                                      |     1      |
+| src/flask/_compat.py       | __ne__                                     |     1      |
+| src/flask/_compat.py       | __init__                                   |     1      |
+| src/flask/_compat.py       | __eq__                                     |     1      |
+| src/flask/_compat.py       | __enter__                                  |     1      |
+| src/flask/_compat.py       | __bool__                                   |     1      |
++----------------------------+--------------------------------------------+------------+
 </pre>
 </div>
 </div>
@@ -13459,7 +13459,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
@@ -13505,26 +13505,26 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>==&gt; Cyclomatic Complexity By File:
-+------------------------+-----------------+-------------------+-----------------+
-| File                   | Sum(Complexity) | Count(Complexity) | Avg(Complexity) |
-+------------------------+-----------------+-------------------+-----------------+
-| flask/json/__init__.py |        7        |         1         |       7.0       |
-| flask/views.py         |        15       |         4         |       3.75      |
-| flask/testing.py       |        31       |         9         |       3.44      |
-| flask/templating.py    |        22       |         7         |       3.14      |
-| flask/config.py        |        36       |         12        |       3.0       |
-| flask/cli.py           |        49       |         17        |       2.88      |
-| flask/app.py           |       211       |         76        |       2.78      |
-| flask/wrappers.py      |        18       |         7         |       2.57      |
-| flask/ctx.py           |        53       |         22        |       2.41      |
-| flask/helpers.py       |        24       |         12        |       2.0       |
-| flask/debughelpers.py  |        6        |         3         |       2.0       |
-| flask/sessions.py      |        41       |         22        |       1.86      |
-| flask/blueprints.py    |        51       |         32        |       1.59      |
-| flask/json/tag.py      |        47       |         33        |       1.42      |
-| flask/_compat.py       |        8        |         7         |       1.14      |
-| flask/signals.py       |        4        |         4         |       1.0       |
-+------------------------+-----------------+-------------------+-----------------+
++----------------------------+-----------------+-------------------+-----------------+
+| File                       | Sum(Complexity) | Count(Complexity) | Avg(Complexity) |
++----------------------------+-----------------+-------------------+-----------------+
+| src/flask/json/__init__.py |        7        |         1         |       7.0       |
+| src/flask/views.py         |        15       |         4         |       3.75      |
+| src/flask/testing.py       |        31       |         9         |       3.44      |
+| src/flask/templating.py    |        22       |         7         |       3.14      |
+| src/flask/config.py        |        36       |         12        |       3.0       |
+| src/flask/cli.py           |        50       |         17        |       2.94      |
+| src/flask/app.py           |       211       |         76        |       2.78      |
+| src/flask/wrappers.py      |        18       |         7         |       2.57      |
+| src/flask/ctx.py           |        53       |         22        |       2.41      |
+| src/flask/helpers.py       |        24       |         12        |       2.0       |
+| src/flask/debughelpers.py  |        6        |         3         |       2.0       |
+| src/flask/sessions.py      |        41       |         22        |       1.86      |
+| src/flask/blueprints.py    |        51       |         32        |       1.59      |
+| src/flask/json/tag.py      |        47       |         33        |       1.42      |
+| src/flask/_compat.py       |        8        |         7         |       1.14      |
+| src/flask/signals.py       |        4        |         4         |       1.0       |
++----------------------------+-----------------+-------------------+-----------------+
 </pre>
 </div>
 </div>
@@ -13535,7 +13535,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">prettytable</span> <span class="k">import</span> <span class="n">PrettyTable</span>
@@ -13602,183 +13602,184 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>==&gt; Halstead By File/Function:
-+------------------------+-------------------------------------------+------------+--------+------------+--------+------------+--------+--------+---------+
-| File                   |                   Method                  | vocabulary | length | cal_length | volume | difficulty | effort |  time  |   bugs  |
-+------------------------+-------------------------------------------+------------+--------+------------+--------+------------+--------+--------+---------+
-| flask/helpers.py       |                 send_file                 |     46     |   70   |   221.3    | 386.65 |  5.59459   | 2163.1 | 120.17 | 0.12888 |
-| flask/app.py           |                add_url_rule               |     26     |   36   |    99.1    | 169.22 |  5.33333   | 902.5  | 50.14  | 0.05641 |
-| flask/debughelpers.py  |     explain_template_loading_attempts     |     40     |   57   |   184.0    | 303.35 |    4.75    | 1440.9 | 80.05  | 0.10112 |
-| flask/cli.py           |                load_dotenv                |     17     |   24   |    53.6    |  98.1  |  4.36364   | 428.1  | 23.78  |  0.0327 |
-| flask/sessions.py      |             get_cookie_domain             |     15     |   19   |    44.0    | 74.23  |    4.0     | 296.9  |  16.5  | 0.02474 |
-| flask/testing.py       |                  __init__                 |     26     |   39   |   101.9    | 183.32 |    3.9     | 714.9  | 39.72  | 0.06111 |
-| flask/cli.py           |               _validate_key               |     18     |   24   |    58.5    | 100.08 |    3.75    | 375.3  | 20.85  | 0.03336 |
-| flask/helpers.py       |               get_root_path               |     19     |   21   |    63.6    | 89.21  |  3.23077   | 288.2  | 16.01  | 0.02974 |
-| flask/views.py         |              dispatch_request             |     13     |   15   |    35.6    | 55.51  |   3.125    | 173.5  |  9.64  |  0.0185 |
-| flask/ctx.py           |                    push                   |     19     |   24   |    64.9    | 101.95 |  2.85714   | 291.3  | 16.18  | 0.03398 |
-| flask/json/tag.py      |                  register                 |     13     |   14   |    35.6    | 51.81  |   2.8125   | 145.7  |  8.09  | 0.01727 |
-| flask/cli.py           |               routes_command              |     13     |   14   |    35.6    | 51.81  |   2.8125   | 145.7  |  8.09  | 0.01727 |
-| flask/app.py           |               make_response               |     15     |   17   |    44.8    | 66.42  |    2.75    | 182.6  | 10.15  | 0.02214 |
-| flask/helpers.py       |                  url_for                  |     27     |   35   |   109.7    | 166.42 |  2.61364   | 435.0  | 24.16  | 0.05547 |
-| flask/app.py           |              process_response             |     11     |   14   |    27.7    | 48.43  |  2.57143   | 124.5  |  6.92  | 0.01614 |
-| flask/json/__init__.py |                  jsonify                  |     12     |   15   |    32.0    | 53.77  |    2.5     | 134.4  |  7.47  | 0.01792 |
-| flask/helpers.py       |                 safe_join                 |     12     |   14   |    32.0    | 50.19  |    2.5     | 125.5  |  6.97  | 0.01673 |
-| flask/helpers.py       |             _find_package_path            |     17     |   18   |    54.6    | 73.57  |    2.5     | 183.9  | 10.22  | 0.02452 |
-| flask/cli.py           |                call_factory               |     15     |   15   |    44.8    |  58.6  |    2.5     | 146.5  |  8.14  | 0.01953 |
-| flask/app.py           |           handle_user_exception           |     17     |   19   |    54.6    | 77.66  |    2.5     | 194.2  | 10.79  | 0.02589 |
-| flask/app.py           |            do_teardown_request            |     11     |   12   |    27.7    | 41.51  |  2.28571   |  94.9  |  5.27  | 0.01384 |
-| flask/ctx.py           |                    pop                    |     13     |   15   |    36.5    | 55.51  |  2.22222   | 123.3  |  6.85  |  0.0185 |
-| flask/app.py           |                    run                    |     16     |   19   |    51.0    |  76.0  |  2.16667   | 164.7  |  9.15  | 0.02533 |
-| flask/ctx.py           |                    pop                    |     15     |   17   |    46.1    | 66.42  |    2.0     | 132.8  |  7.38  | 0.02214 |
-| flask/cli.py           |             show_server_banner            |     15     |   17   |    46.1    | 66.42  |    2.0     | 132.8  |  7.38  | 0.02214 |
-| flask/cli.py           |               prepare_import              |     12     |   13   |    32.0    |  46.6  |    2.0     |  93.2  |  5.18  | 0.01553 |
-| flask/blueprints.py    |                add_url_rule               |     12     |   12   |    32.0    | 43.02  |    2.0     |  86.0  |  4.78  | 0.01434 |
-| flask/app.py           |                  __init__                 |     11     |   11   |    27.7    | 38.05  |    2.0     |  76.1  |  4.23  | 0.01268 |
-| flask/app.py           |             preprocess_request            |     14     |   21   |    42.8    | 79.95  |  1.90909   | 152.6  |  8.48  | 0.02665 |
-| flask/cli.py           |               find_best_app               |     7      |   8    |    12.8    | 22.46  |   1.875    |  42.1  |  2.34  | 0.00749 |
-| flask/config.py        |                from_mapping               |     8      |   9    |    16.4    |  27.0  |    1.8     |  48.6  |  2.7   |  0.009  |
-| flask/blueprints.py    |                  register                 |     9      |   11   |    20.3    | 34.87  |    1.75    |  61.0  |  3.39  | 0.01162 |
-| flask/helpers.py       | _matching_loader_thinks_module_is_package |     10     |   12   |    24.4    | 39.86  |  1.71429   |  68.3  |  3.8   | 0.01329 |
-| flask/app.py           |          update_template_context          |     10     |   12   |    24.4    | 39.86  |  1.71429   |  68.3  |  3.8   | 0.01329 |
-| flask/json/__init__.py |              detect_encoding              |     22     |   30   |    85.5    | 133.78 |  1.57895   | 211.2  | 11.74  | 0.04459 |
-| flask/wrappers.py      |              _load_form_data              |     10     |   10   |    24.4    | 33.22  |    1.5     |  49.8  |  2.77  | 0.01107 |
-| flask/testing.py       |                    open                   |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
-| flask/logging.py       |             has_level_handler             |     4      |   5    |    4.0     |  10.0  |    1.5     |  15.0  |  0.83  | 0.00333 |
-| flask/logging.py       |                _has_config                |     10     |   10   |    24.4    | 33.22  |    1.5     |  49.8  |  2.77  | 0.01107 |
-| flask/json/tag.py      |                   check                   |     10     |   10   |    24.4    | 33.22  |    1.5     |  49.8  |  2.77  | 0.01107 |
-| flask/json/__init__.py |             _dump_arg_defaults            |     8      |   8    |    16.4    |  24.0  |    1.5     |  36.0  |  2.0   |  0.008  |
-| flask/helpers.py       |            get_flashed_messages           |     10     |   11   |    24.4    | 36.54  |    1.5     |  54.8  |  3.05  | 0.01218 |
-| flask/helpers.py       |               get_debug_flag              |     8      |   8    |    16.4    |  24.0  |    1.5     |  36.0  |  2.0   |  0.008  |
-| flask/debughelpers.py  |                  __init__                 |     11     |   12   |    28.8    | 41.51  |    1.5     |  62.3  |  3.46  | 0.01384 |
-| flask/ctx.py           |                  auto_pop                 |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
-| flask/config.py        |                from_pyfile                |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
-| flask/config.py        |                 from_file                 |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
-| flask/cli.py           |                  load_app                 |     10     |   11   |    24.4    | 36.54  |    1.5     |  54.8  |  3.05  | 0.01218 |
-| flask/cli.py           |                get_version                |     8      |   8    |    16.4    |  24.0  |    1.5     |  36.0  |  2.0   |  0.008  |
-| flask/cli.py           |                  convert                  |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
-| flask/app.py           |             register_blueprint            |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
-| flask/app.py           |          raise_routing_exception          |     10     |   11   |    24.4    | 36.54  |    1.5     |  54.8  |  3.05  | 0.01218 |
-| flask/app.py           |              dispatch_request             |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
-| flask/app.py           |             create_url_adapter            |     10     |   11   |    24.4    | 36.54  |    1.5     |  54.8  |  3.05  | 0.01218 |
-| flask/templating.py    |           _get_source_explained           |     5      |   6    |    6.8     | 13.93  |  1.33333   |  18.6  |  1.03  | 0.00464 |
-| flask/cli.py           |                run_command                |     8      |   11   |    17.5    |  33.0  |  1.16667   |  38.5  |  2.14  |  0.011  |
-| flask/helpers.py       |               total_seconds               |     9      |   12   |    21.7    | 38.04  |  1.14286   |  43.5  |  2.42  | 0.01268 |
-| flask/wrappers.py      |                 blueprint                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/testing.py       |            session_transaction            |     7      |   8    |    13.6    | 22.46  |    1.0     |  22.5  |  1.25  | 0.00749 |
-| flask/testing.py       |                   invoke                  |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/testing.py       |                  __exit__                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/sessions.py      |             should_set_cookie             |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/sessions.py      |                open_session               |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
-| flask/logging.py       |               create_logger               |     9      |   12   |    21.7    | 38.04  |    1.0     |  38.0  |  2.11  | 0.01268 |
-| flask/json/tag.py      |                   untag                   |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/json/__init__.py |                    load                   |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
-| flask/json/__init__.py |                   dumps                   |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/json/__init__.py |             _load_arg_defaults            |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/helpers.py       |              static_url_path              |     8      |   9    |    17.5    |  27.0  |    1.0     |  27.0  |  1.5   |  0.009  |
-| flask/helpers.py       |               make_response               |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
-| flask/helpers.py       |                   is_ip                   |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/helpers.py       |              get_load_dotenv              |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
-| flask/debughelpers.py  |             _dump_loader_info             |     12     |   16   |    35.2    | 57.36  |    1.0     |  57.4  |  3.19  | 0.01912 |
-| flask/ctx.py           |                  __repr__                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/ctx.py           |                  __exit__                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/ctx.py           |                  __exit__                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/config.py        |                from_envvar                |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
-| flask/config.py        |                  __get__                  |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/cli.py           |               shell_command               |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/cli.py           |                 locate_app                |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
-| flask/cli.py           |          _called_with_wrong_args          |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/blueprints.py    |                add_url_rule               |     8      |   9    |    17.5    |  27.0  |    1.0     |  27.0  |  1.5   |  0.009  |
-| flask/app.py           |            trap_http_exception            |     7      |   7    |    13.6    | 19.65  |    1.0     |  19.7  |  1.09  | 0.00655 |
-| flask/app.py           |            propagate_exceptions           |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/app.py           |                    name                   |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/app.py           |           handle_url_build_error          |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/app.py           |              handle_exception             |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/app.py           |          auto_find_instance_path          |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
-| flask/app.py           |            _find_error_handler            |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
-| flask/templating.py    |               list_templates              |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
-| flask/templating.py    |               _iter_loaders               |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
-| flask/cli.py           |                get_command                |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
-| flask/cli.py           |                  __call__                 |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
-| flask/app.py           |          create_jinja_environment         |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
-| flask/wrappers.py      |           on_json_loading_failed          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/wrappers.py      |                  endpoint                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/views.py         |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/testing.py       |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/templating.py    |      _default_template_ctx_processor      |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
-| flask/templating.py    |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/sessions.py      |                save_session               |     3      |   4    |    2.0     |  6.34  |    0.5     |  3.2   |  0.18  | 0.00211 |
-| flask/sessions.py      |           get_signing_serializer          |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
-| flask/sessions.py      |            get_expiration_time            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/sessions.py      |              get_cookie_path              |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/json/tag.py      |                 to_python                 |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
-| flask/json/tag.py      |                  to_json                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/json/__init__.py |                   loads                   |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/json/__init__.py |               htmlsafe_dumps              |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
-| flask/json/__init__.py |                    dump                   |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/json/__init__.py |                  default                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |            stream_with_context            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |              static_url_path              |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |               static_folder               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |              send_static_file             |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
-| flask/helpers.py       |            send_from_directory            |     3      |   4    |    2.0     |  6.34  |    0.5     |  3.2   |  0.18  | 0.00211 |
-| flask/helpers.py       |               open_resource               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |                jinja_loader               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |             has_static_folder             |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |                  get_env                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |                find_package               |     7      |   9    |    15.5    | 25.27  |    0.5     |  12.6  |  0.7   | 0.00842 |
-| flask/helpers.py       |          _endpoint_from_view_func         |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |                  __init__                 |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
-| flask/helpers.py       |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/helpers.py       |                  __get__                  |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
-| flask/globals.py       |             _lookup_req_object            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/globals.py       |             _lookup_app_object            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/globals.py       |                 _find_app                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/debughelpers.py  |          explain_ignored_app_run          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/debughelpers.py  |       attach_enctype_error_multidict      |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/debughelpers.py  |                  __init__                 |     7      |   9    |    15.5    | 25.27  |    0.5     |  12.6  |  0.7   | 0.00842 |
-| flask/ctx.py           |                    push                   |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/ctx.py           |                    pop                    |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/ctx.py           |            has_request_context            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/ctx.py           |              has_app_context              |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/ctx.py           |        copy_current_request_context       |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/ctx.py           |                  __repr__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/ctx.py           |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/ctx.py           |                __contains__               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/config.py        |               get_namespace               |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
-| flask/config.py        |                  __repr__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/config.py        |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/cli.py           |                    main                   |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/cli.py           |             find_app_by_string            |     3      |   4    |    2.0     |  6.34  |    0.5     |  3.2   |  0.18  | 0.00211 |
-| flask/cli.py           |             _path_is_ancestor             |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/cli.py           |        _flush_bg_loading_exception        |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/cli.py           |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/cli.py           |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/blueprints.py    |                   record                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/blueprints.py    |           add_app_template_test           |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/blueprints.py    |          add_app_template_global          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/blueprints.py    |          add_app_template_filter          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/blueprints.py    |                  __init__                 |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
-| flask/blueprints.py    |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |                test_client                |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |              test_cli_runner              |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |           templates_auto_reload           |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |                setupmethod                |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |          select_jinja_autoescape          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |       preserve_context_on_exception       |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |               log_exception               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |            inject_url_defaults            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |           handle_http_exception           |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
-| flask/app.py           |           full_dispatch_request           |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |              finalize_request             |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
-| flask/app.py           |           do_teardown_appcontext          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |             add_template_test             |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |            add_template_global            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |            add_template_filter            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/app.py           |              _make_timedelta              |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
-| flask/app.py           |                  __repr__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/_compat.py       |                  reraise                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/_compat.py       |                   __ne__                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-| flask/_compat.py       |                   __eq__                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
-+------------------------+-------------------------------------------+------------+--------+------------+--------+------------+--------+--------+---------+
++----------------------------+-------------------------------------------+------------+--------+------------+--------+------------+--------+--------+---------+
+| File                       |                   Method                  | vocabulary | length | cal_length | volume | difficulty | effort |  time  |   bugs  |
++----------------------------+-------------------------------------------+------------+--------+------------+--------+------------+--------+--------+---------+
+| src/flask/helpers.py       |                 send_file                 |     48     |   73   |   234.7    | 407.7  |  5.53846   | 2258.0 | 125.45 |  0.1359 |
+| src/flask/app.py           |                add_url_rule               |     26     |   36   |    99.1    | 169.22 |  5.33333   | 902.5  | 50.14  | 0.05641 |
+| src/flask/debughelpers.py  |     explain_template_loading_attempts     |     40     |   57   |   184.0    | 303.35 |    4.75    | 1440.9 | 80.05  | 0.10112 |
+| src/flask/cli.py           |                load_dotenv                |     17     |   24   |    53.6    |  98.1  |  4.36364   | 428.1  | 23.78  |  0.0327 |
+| src/flask/sessions.py      |             get_cookie_domain             |     15     |   19   |    44.0    | 74.23  |    4.0     | 296.9  |  16.5  | 0.02474 |
+| src/flask/testing.py       |                  __init__                 |     26     |   39   |   101.9    | 183.32 |    3.9     | 714.9  | 39.72  | 0.06111 |
+| src/flask/cli.py           |               _validate_key               |     18     |   24   |    58.5    | 100.08 |    3.75    | 375.3  | 20.85  | 0.03336 |
+| src/flask/helpers.py       |               get_root_path               |     19     |   21   |    63.6    | 89.21  |  3.23077   | 288.2  | 16.01  | 0.02974 |
+| src/flask/views.py         |              dispatch_request             |     13     |   15   |    35.6    | 55.51  |   3.125    | 173.5  |  9.64  |  0.0185 |
+| src/flask/ctx.py           |                    push                   |     19     |   24   |    64.9    | 101.95 |  2.85714   | 291.3  | 16.18  | 0.03398 |
+| src/flask/json/tag.py      |                  register                 |     13     |   14   |    35.6    | 51.81  |   2.8125   | 145.7  |  8.09  | 0.01727 |
+| src/flask/cli.py           |               routes_command              |     13     |   14   |    35.6    | 51.81  |   2.8125   | 145.7  |  8.09  | 0.01727 |
+| src/flask/app.py           |               make_response               |     15     |   17   |    44.8    | 66.42  |    2.75    | 182.6  | 10.15  | 0.02214 |
+| src/flask/helpers.py       |                  url_for                  |     27     |   35   |   109.7    | 166.42 |  2.61364   | 435.0  | 24.16  | 0.05547 |
+| src/flask/app.py           |              process_response             |     11     |   14   |    27.7    | 48.43  |  2.57143   | 124.5  |  6.92  | 0.01614 |
+| src/flask/json/__init__.py |                  jsonify                  |     12     |   15   |    32.0    | 53.77  |    2.5     | 134.4  |  7.47  | 0.01792 |
+| src/flask/helpers.py       |                 safe_join                 |     12     |   14   |    32.0    | 50.19  |    2.5     | 125.5  |  6.97  | 0.01673 |
+| src/flask/helpers.py       |             _find_package_path            |     17     |   18   |    54.6    | 73.57  |    2.5     | 183.9  | 10.22  | 0.02452 |
+| src/flask/cli.py           |                call_factory               |     15     |   15   |    44.8    |  58.6  |    2.5     | 146.5  |  8.14  | 0.01953 |
+| src/flask/app.py           |           handle_user_exception           |     17     |   19   |    54.6    | 77.66  |    2.5     | 194.2  | 10.79  | 0.02589 |
+| src/flask/app.py           |            do_teardown_request            |     11     |   12   |    27.7    | 41.51  |  2.28571   |  94.9  |  5.27  | 0.01384 |
+| src/flask/ctx.py           |                    pop                    |     13     |   15   |    36.5    | 55.51  |  2.22222   | 123.3  |  6.85  |  0.0185 |
+| src/flask/app.py           |                    run                    |     16     |   19   |    51.0    |  76.0  |  2.16667   | 164.7  |  9.15  | 0.02533 |
+| src/flask/ctx.py           |                    pop                    |     15     |   17   |    46.1    | 66.42  |    2.0     | 132.8  |  7.38  | 0.02214 |
+| src/flask/cli.py           |             show_server_banner            |     15     |   17   |    46.1    | 66.42  |    2.0     | 132.8  |  7.38  | 0.02214 |
+| src/flask/cli.py           |               prepare_import              |     12     |   13   |    32.0    |  46.6  |    2.0     |  93.2  |  5.18  | 0.01553 |
+| src/flask/blueprints.py    |                add_url_rule               |     12     |   12   |    32.0    | 43.02  |    2.0     |  86.0  |  4.78  | 0.01434 |
+| src/flask/app.py           |                  __init__                 |     11     |   11   |    27.7    | 38.05  |    2.0     |  76.1  |  4.23  | 0.01268 |
+| src/flask/app.py           |             preprocess_request            |     14     |   21   |    42.8    | 79.95  |  1.90909   | 152.6  |  8.48  | 0.02665 |
+| src/flask/cli.py           |               find_best_app               |     7      |   8    |    12.8    | 22.46  |   1.875    |  42.1  |  2.34  | 0.00749 |
+| src/flask/config.py        |                from_mapping               |     8      |   9    |    16.4    |  27.0  |    1.8     |  48.6  |  2.7   |  0.009  |
+| src/flask/blueprints.py    |                  register                 |     9      |   11   |    20.3    | 34.87  |    1.75    |  61.0  |  3.39  | 0.01162 |
+| src/flask/helpers.py       | _matching_loader_thinks_module_is_package |     10     |   12   |    24.4    | 39.86  |  1.71429   |  68.3  |  3.8   | 0.01329 |
+| src/flask/app.py           |          update_template_context          |     10     |   12   |    24.4    | 39.86  |  1.71429   |  68.3  |  3.8   | 0.01329 |
+| src/flask/json/__init__.py |              detect_encoding              |     22     |   30   |    85.5    | 133.78 |  1.57895   | 211.2  | 11.74  | 0.04459 |
+| src/flask/wrappers.py      |              _load_form_data              |     10     |   10   |    24.4    | 33.22  |    1.5     |  49.8  |  2.77  | 0.01107 |
+| src/flask/testing.py       |                    open                   |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
+| src/flask/logging.py       |             has_level_handler             |     4      |   5    |    4.0     |  10.0  |    1.5     |  15.0  |  0.83  | 0.00333 |
+| src/flask/logging.py       |                _has_config                |     10     |   10   |    24.4    | 33.22  |    1.5     |  49.8  |  2.77  | 0.01107 |
+| src/flask/json/tag.py      |                   check                   |     10     |   10   |    24.4    | 33.22  |    1.5     |  49.8  |  2.77  | 0.01107 |
+| src/flask/json/__init__.py |             _dump_arg_defaults            |     8      |   8    |    16.4    |  24.0  |    1.5     |  36.0  |  2.0   |  0.008  |
+| src/flask/helpers.py       |            get_flashed_messages           |     10     |   11   |    24.4    | 36.54  |    1.5     |  54.8  |  3.05  | 0.01218 |
+| src/flask/helpers.py       |               get_debug_flag              |     8      |   8    |    16.4    |  24.0  |    1.5     |  36.0  |  2.0   |  0.008  |
+| src/flask/debughelpers.py  |                  __init__                 |     11     |   12   |    28.8    | 41.51  |    1.5     |  62.3  |  3.46  | 0.01384 |
+| src/flask/ctx.py           |                  auto_pop                 |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
+| src/flask/config.py        |                from_pyfile                |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
+| src/flask/config.py        |                 from_file                 |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
+| src/flask/cli.py           |                  load_app                 |     10     |   11   |    24.4    | 36.54  |    1.5     |  54.8  |  3.05  | 0.01218 |
+| src/flask/cli.py           |                get_version                |     8      |   8    |    16.4    |  24.0  |    1.5     |  36.0  |  2.0   |  0.008  |
+| src/flask/cli.py           |                  convert                  |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
+| src/flask/app.py           |             register_blueprint            |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
+| src/flask/app.py           |          raise_routing_exception          |     10     |   11   |    24.4    | 36.54  |    1.5     |  54.8  |  3.05  | 0.01218 |
+| src/flask/app.py           |              dispatch_request             |     9      |   9    |    20.3    | 28.53  |    1.5     |  42.8  |  2.38  | 0.00951 |
+| src/flask/app.py           |             create_url_adapter            |     10     |   11   |    24.4    | 36.54  |    1.5     |  54.8  |  3.05  | 0.01218 |
+| src/flask/templating.py    |           _get_source_explained           |     5      |   6    |    6.8     | 13.93  |  1.33333   |  18.6  |  1.03  | 0.00464 |
+| src/flask/helpers.py       |               total_seconds               |     9      |   12   |    21.7    | 38.04  |  1.14286   |  43.5  |  2.42  | 0.01268 |
+| src/flask/wrappers.py      |                 blueprint                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/testing.py       |            session_transaction            |     7      |   8    |    13.6    | 22.46  |    1.0     |  22.5  |  1.25  | 0.00749 |
+| src/flask/testing.py       |                   invoke                  |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/testing.py       |                  __exit__                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/sessions.py      |             should_set_cookie             |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/sessions.py      |                open_session               |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
+| src/flask/logging.py       |               create_logger               |     9      |   12   |    21.7    | 38.04  |    1.0     |  38.0  |  2.11  | 0.01268 |
+| src/flask/json/tag.py      |                   untag                   |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/json/__init__.py |                    load                   |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
+| src/flask/json/__init__.py |                   dumps                   |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/json/__init__.py |             _load_arg_defaults            |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/helpers.py       |              static_url_path              |     8      |   9    |    17.5    |  27.0  |    1.0     |  27.0  |  1.5   |  0.009  |
+| src/flask/helpers.py       |               make_response               |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
+| src/flask/helpers.py       |                   is_ip                   |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/helpers.py       |              get_load_dotenv              |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
+| src/flask/debughelpers.py  |             _dump_loader_info             |     12     |   16   |    35.2    | 57.36  |    1.0     |  57.4  |  3.19  | 0.01912 |
+| src/flask/ctx.py           |                  __repr__                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/ctx.py           |                  __exit__                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/ctx.py           |                  __exit__                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/config.py        |                from_envvar                |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
+| src/flask/config.py        |                  __get__                  |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/cli.py           |               shell_command               |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/cli.py           |                 locate_app                |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
+| src/flask/cli.py           |          _called_with_wrong_args          |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/cli.py           |                  __init__                 |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/blueprints.py    |                add_url_rule               |     8      |   9    |    17.5    |  27.0  |    1.0     |  27.0  |  1.5   |  0.009  |
+| src/flask/app.py           |            trap_http_exception            |     7      |   7    |    13.6    | 19.65  |    1.0     |  19.7  |  1.09  | 0.00655 |
+| src/flask/app.py           |            propagate_exceptions           |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/app.py           |                    name                   |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/app.py           |           handle_url_build_error          |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/app.py           |              handle_exception             |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/app.py           |          auto_find_instance_path          |     6      |   6    |    10.0    | 15.51  |    1.0     |  15.5  |  0.86  | 0.00517 |
+| src/flask/app.py           |            _find_error_handler            |     5      |   5    |    6.8     | 11.61  |    1.0     |  11.6  |  0.64  | 0.00387 |
+| src/flask/templating.py    |               list_templates              |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
+| src/flask/templating.py    |               _iter_loaders               |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
+| src/flask/cli.py           |                get_command                |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
+| src/flask/cli.py           |                  __call__                 |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
+| src/flask/app.py           |          create_jinja_environment         |     4      |   6    |    4.8     |  12.0  |  0.66667   |  8.0   |  0.44  |  0.004  |
+| src/flask/wrappers.py      |           on_json_loading_failed          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/wrappers.py      |                  endpoint                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/views.py         |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/testing.py       |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/templating.py    |      _default_template_ctx_processor      |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
+| src/flask/templating.py    |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/sessions.py      |                save_session               |     3      |   4    |    2.0     |  6.34  |    0.5     |  3.2   |  0.18  | 0.00211 |
+| src/flask/sessions.py      |           get_signing_serializer          |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
+| src/flask/sessions.py      |            get_expiration_time            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/sessions.py      |              get_cookie_path              |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/json/tag.py      |                 to_python                 |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
+| src/flask/json/tag.py      |                  to_json                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/json/__init__.py |                   loads                   |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/json/__init__.py |               htmlsafe_dumps              |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
+| src/flask/json/__init__.py |                    dump                   |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/json/__init__.py |                  default                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |            stream_with_context            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |              static_url_path              |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |               static_folder               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |              send_static_file             |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
+| src/flask/helpers.py       |            send_from_directory            |     3      |   4    |    2.0     |  6.34  |    0.5     |  3.2   |  0.18  | 0.00211 |
+| src/flask/helpers.py       |               open_resource               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |                jinja_loader               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |             has_static_folder             |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |                  get_env                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |                find_package               |     7      |   9    |    15.5    | 25.27  |    0.5     |  12.6  |  0.7   | 0.00842 |
+| src/flask/helpers.py       |          _endpoint_from_view_func         |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |                  __init__                 |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
+| src/flask/helpers.py       |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/helpers.py       |                  __get__                  |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
+| src/flask/globals.py       |             _lookup_req_object            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/globals.py       |             _lookup_app_object            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/globals.py       |                 _find_app                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/debughelpers.py  |          explain_ignored_app_run          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/debughelpers.py  |       attach_enctype_error_multidict      |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/debughelpers.py  |                  __init__                 |     7      |   9    |    15.5    | 25.27  |    0.5     |  12.6  |  0.7   | 0.00842 |
+| src/flask/ctx.py           |                    push                   |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/ctx.py           |                    pop                    |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/ctx.py           |            has_request_context            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/ctx.py           |              has_app_context              |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/ctx.py           |        copy_current_request_context       |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/ctx.py           |                  __repr__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/ctx.py           |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/ctx.py           |                __contains__               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/config.py        |               get_namespace               |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
+| src/flask/config.py        |                  __repr__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/config.py        |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/cli.py           |                run_command                |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
+| src/flask/cli.py           |                    main                   |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/cli.py           |             find_app_by_string            |     3      |   4    |    2.0     |  6.34  |    0.5     |  3.2   |  0.18  | 0.00211 |
+| src/flask/cli.py           |             _path_is_ancestor             |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/cli.py           |        _flush_bg_loading_exception        |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/cli.py           |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/cli.py           |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/blueprints.py    |                   record                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/blueprints.py    |           add_app_template_test           |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/blueprints.py    |          add_app_template_global          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/blueprints.py    |          add_app_template_filter          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/blueprints.py    |                  __init__                 |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
+| src/flask/blueprints.py    |                  __init__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |                test_client                |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |              test_cli_runner              |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |           templates_auto_reload           |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |                setupmethod                |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |          select_jinja_autoescape          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |       preserve_context_on_exception       |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |               log_exception               |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |            inject_url_defaults            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |           handle_http_exception           |     5      |   6    |    8.0     | 13.93  |    0.5     |  7.0   |  0.39  | 0.00464 |
+| src/flask/app.py           |           full_dispatch_request           |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |              finalize_request             |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
+| src/flask/app.py           |           do_teardown_appcontext          |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |             add_template_test             |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |            add_template_global            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |            add_template_filter            |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/app.py           |              _make_timedelta              |     2      |   2    |    0.0     |  2.0   |    0.5     |  1.0   |  0.06  | 0.00067 |
+| src/flask/app.py           |                  __repr__                 |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/_compat.py       |                  reraise                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/_compat.py       |                   __ne__                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
+| src/flask/_compat.py       |                   __eq__                  |     3      |   3    |    2.0     |  4.75  |    0.5     |  2.4   |  0.13  | 0.00158 |
++----------------------------+-------------------------------------------+------------+--------+------------+--------+------------+--------+--------+---------+
 </pre>
 </div>
 </div>
@@ -13789,7 +13790,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">prettytable</span> <span class="k">import</span> <span class="n">PrettyTable</span>
@@ -13830,30 +13831,30 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>==&gt; Maintainability Index By File:
-+------------------------+-----------------------+
-| File                   | Maintainability Index |
-+------------------------+-----------------------+
-| flask/app.py           |   2.873611293559958   |
-| flask/cli.py           |   27.61387558110269   |
-| flask/helpers.py       |   29.183284426484043  |
-| flask/ctx.py           |   48.797303450249196  |
-| flask/blueprints.py    |   50.930690288789215  |
-| flask/json/__init__.py |   55.06590239065166   |
-| flask/debughelpers.py  |   55.81345367778238   |
-| flask/config.py        |   56.22039609922887   |
-| flask/sessions.py      |   57.149971464710696  |
-| flask/json/tag.py      |   59.694192230481754  |
-| flask/views.py         |    61.4334809288865   |
-| flask/testing.py       |   61.829283593209674  |
-| flask/templating.py    |   67.28922858905452   |
-| flask/wrappers.py      |   68.87734685865645   |
-| flask/_compat.py       |   70.90721495883564   |
-| flask/__main__.py      |   74.84640431451162   |
-| flask/logging.py       |   77.21745512587495   |
-| flask/globals.py       |   84.16752922994455   |
-| flask/__init__.py      |         100.0         |
-| flask/signals.py       |         100.0         |
-+------------------------+-----------------------+
++----------------------------+-----------------------+
+| File                       | Maintainability Index |
++----------------------------+-----------------------+
+| src/flask/app.py           |   2.9941158926032476  |
+| src/flask/cli.py           |   27.59055295587472   |
+| src/flask/helpers.py       |   28.70351097247552   |
+| src/flask/ctx.py           |   48.797303450249196  |
+| src/flask/blueprints.py    |   50.930690288789215  |
+| src/flask/json/__init__.py |   55.06590239065166   |
+| src/flask/debughelpers.py  |   55.81345367778238   |
+| src/flask/config.py        |   56.22039609922887   |
+| src/flask/sessions.py      |   57.149971464710696  |
+| src/flask/json/tag.py      |   59.694192230481754  |
+| src/flask/views.py         |    61.4334809288865   |
+| src/flask/testing.py       |   61.829283593209674  |
+| src/flask/templating.py    |   67.28922858905452   |
+| src/flask/wrappers.py      |   68.87734685865645   |
+| src/flask/_compat.py       |   70.90721495883564   |
+| src/flask/__main__.py      |   74.84640431451162   |
+| src/flask/logging.py       |   77.21745512587495   |
+| src/flask/globals.py       |   84.16752922994455   |
+| src/flask/__init__.py      |         100.0         |
+| src/flask/signals.py       |         100.0         |
++----------------------------+-----------------------+
 </pre>
 </div>
 </div>
@@ -13864,7 +13865,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">prettytable</span> <span class="k">import</span> <span class="n">PrettyTable</span>
@@ -13940,7 +13941,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">prettytable</span> <span class="k">import</span> <span class="n">PrettyTable</span>
@@ -13984,30 +13985,30 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>==&gt; Raw Stats By File:
-+------------------------+------+------+------+----------+-------+-------+-----------------+
-| File                   | loc  | lloc | sloc | comments | multi | blank | single_comments |
-+------------------------+------+------+------+----------+-------+-------+-----------------+
-| flask/app.py           | 2455 | 741  | 832  |   323    |  882  |  422  |       319       |
-| flask/blueprints.py    | 569  | 230  | 242  |    28    |  198  |  101  |        28       |
-| flask/cli.py           | 971  | 472  | 601  |    50    |  126  |  200  |        44       |
-| flask/config.py        | 301  | 107  | 108  |    1     |  130  |   61  |        2        |
-| flask/ctx.py           | 475  | 182  | 184  |    41    |  148  |   99  |        44       |
-| flask/debughelpers.py  | 183  |  99  | 128  |    2     |   21  |   31  |        3        |
-| flask/globals.py       |  62  |  27  |  37  |    2     |   8   |   15  |        2        |
-| flask/helpers.py       | 1153 | 424  | 475  |    89    |  376  |  212  |        90       |
-| flask/logging.py       | 109  |  40  |  47  |    5     |   29  |   28  |        5        |
-| flask/sessions.py      | 394  | 150  | 162  |    49    |  103  |   78  |        51       |
-| flask/signals.py       |  65  |  33  |  34  |    5     |   13  |   13  |        5        |
-| flask/templating.py    | 155  |  92  |  89  |    1     |   32  |   32  |        2        |
-| flask/testing.py       | 283  | 114  | 146  |    12    |   75  |   50  |        12       |
-| flask/views.py         | 163  |  52  |  48  |    23    |   55  |   37  |        23       |
-| flask/wrappers.py      | 137  |  49  |  47  |    20    |   37  |   31  |        22       |
-| flask/_compat.py       | 145  |  91  |  83  |    23    |   9   |   32  |        21       |
-| flask/__init__.py      |  60  |  46  |  45  |    3     |   8   |   4   |        3        |
-| flask/__main__.py      |  15  |  4   |  3   |    1     |   7   |   4   |        1        |
-| flask/json/tag.py      | 309  | 147  | 142  |    7     |   66  |   87  |        14       |
-| flask/json/__init__.py | 376  | 147  | 155  |    4     |  128  |   85  |        8        |
-+------------------------+------+------+------+----------+-------+-------+-----------------+
++----------------------------+------+------+------+----------+-------+-------+-----------------+
+| File                       | loc  | lloc | sloc | comments | multi | blank | single_comments |
++----------------------------+------+------+------+----------+-------+-------+-----------------+
+| src/flask/app.py           | 2450 | 741  | 832  |   318    |  882  |  422  |       314       |
+| src/flask/blueprints.py    | 569  | 230  | 242  |    28    |  198  |  101  |        28       |
+| src/flask/cli.py           | 972  | 472  | 601  |    50    |  126  |  201  |        44       |
+| src/flask/config.py        | 301  | 107  | 108  |    1     |  130  |   61  |        2        |
+| src/flask/ctx.py           | 475  | 182  | 184  |    41    |  148  |   99  |        44       |
+| src/flask/debughelpers.py  | 183  |  99  | 128  |    2     |   21  |   31  |        3        |
+| src/flask/globals.py       |  62  |  27  |  37  |    2     |   8   |   15  |        2        |
+| src/flask/helpers.py       | 1165 | 425  | 476  |    89    |  382  |  217  |        90       |
+| src/flask/logging.py       | 109  |  40  |  47  |    5     |   29  |   28  |        5        |
+| src/flask/sessions.py      | 394  | 150  | 162  |    49    |  103  |   78  |        51       |
+| src/flask/signals.py       |  65  |  33  |  34  |    5     |   13  |   13  |        5        |
+| src/flask/templating.py    | 155  |  92  |  89  |    1     |   32  |   32  |        2        |
+| src/flask/testing.py       | 283  | 114  | 146  |    12    |   75  |   50  |        12       |
+| src/flask/views.py         | 163  |  52  |  48  |    23    |   55  |   37  |        23       |
+| src/flask/wrappers.py      | 137  |  49  |  47  |    20    |   37  |   31  |        22       |
+| src/flask/_compat.py       | 145  |  91  |  83  |    23    |   9   |   32  |        21       |
+| src/flask/__init__.py      |  60  |  46  |  45  |    3     |   8   |   4   |        3        |
+| src/flask/__main__.py      |  15  |  4   |  3   |    1     |   7   |   4   |        1        |
+| src/flask/json/tag.py      | 309  | 147  | 142  |    7     |   66  |   87  |        14       |
+| src/flask/json/__init__.py | 376  | 147  | 155  |    4     |  128  |   85  |        8        |
++----------------------------+------+------+------+----------+-------+-------+-----------------+
 </pre>
 </div>
 </div>
