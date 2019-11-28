@@ -151,8 +151,8 @@ def list_phrase():
     for issue in issues():
         words = get_issue_texts(issue).split(" ")
 
-        for i in range(len(words) - 3):
-            phrases.append(" ".join(words[i:i + 3]))
+        for i in range(len(words) - 2):
+            phrases.append(" ".join(words[i:i + 2]))
 
     grouped = Counter(phrases).most_common()
 
@@ -160,4 +160,53 @@ def list_phrase():
         print(each)
 
 
-list_phrase()
+# list_phrase()
+
+nagative_words = [
+    "hard to read", "hard to debug", "hard to understand", "hard to spot", "hard to remember",
+    "harder to read", "harder to debug", "harder to understand", "harder to spot", "harder to remember",
+    "not readable", "readability", 
+    "not understandable", "understandability", 
+    "comprehension", "comprehend", "not comprehensible",
+    "confuse", "confusing", "confusion",
+    "clean up", "cleanup",
+    "indentation", "indent level",
+    
+    "formatting", "variable name", "line length",
+    "line break", "order of code", "ambiguous names", "clear name",
+    "duplicate", "duplication",
+    "unused code", "complex code", "complicated", 
+    # some keywords are too general
+    "order of line", 
+    # some can means too many other things
+    # ignore this=>"bad code", "bad piece of code",
+    "bad comment",
+    "clarify", "clarified", "clarification",
+    "misleading", "is vague", "is too vague",
+    "bad name", "bad naming", "bad names", 
+    "not meaningful", "not descriptive",
+
+    "typo", "long name", "short name",
+    "redundant comment", "redundant code",
+    "rename", "renaming"
+]
+
+def count_words():
+    file_hit = defaultdict(int)
+
+    # file, issue
+    for file, issue in issues_by_files():
+        texts = get_issue_texts(issue)
+
+        count = 0
+        for neg_word in nagative_words:
+            count += texts.count(neg_word)
+        
+        file_hit[file] += count
+
+    for file, hit in file_hit.items():
+        yield file, hit
+
+
+for file, hit in count_words():
+    print(hit, file)

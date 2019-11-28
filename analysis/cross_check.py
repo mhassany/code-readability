@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+# Raw Stats By File	
 raw = [
     [1, "flask/app.py"],
     [2, "flask/helpers.py"],
@@ -22,6 +23,8 @@ raw = [
     [19, "flask/__init__.py"],
     [20, "flask/__main__.py"]
 ]
+
+# Cyclomatic Complexity By File	
 cc = [
     [1, "flask/app.py"],
     [2, "flask/cli.py"],
@@ -40,6 +43,8 @@ cc = [
     [15, "flask/_compat.py"],
     [16, "flask/signals.py"]
 ]
+
+# Halstead by File					
 hal = [
     [1, "flask/app.py"],
     [2, "flask/helpers.py"],
@@ -62,6 +67,8 @@ hal = [
     [19, "flask/signals.py"],
     [20, "flask/__init__.py"]
 ]
+
+# Maintainability Index By File	
 mi = [
     [1, "flask/app.py"],
     [2, "flask/cli.py"],
@@ -84,6 +91,8 @@ mi = [
     [19, "flask/__init__.py"],
     [20, "flask/signals.py"]
 ]
+
+# PyLint Score By File	
 py = [
     [1, "flask/logging.py"],
     [2, "flask/templating.py"],
@@ -106,6 +115,8 @@ py = [
     [19, "flask/__main__.py"],
     [20, "flask/__init__.py"]
 ]
+
+# Line Addition/Removal by File	
 ar = [
     [1, "flask/app.py"],
     [2, "flask/cli.py"],
@@ -136,6 +147,8 @@ ar = [
     [27, "flask/exceptions.py"],
     [28, "flask/__main__.py"]
 ]
+
+# Number of Contributors	
 cn = [
     [1, "flask/app.py"],
     [2, "flask/helpers.py"],
@@ -167,6 +180,32 @@ cn = [
     [28, "flask/conf.py"]
 ]
 
+# Issue File Hit Count	
+fc = [
+    [1, "flask/app.py"],
+    [2, "flask/cli.py"],
+    [3, "flask/helpers.py"],
+    [4, "flask/logging.py"],
+    [5, "flask/json.py"],
+    [6, "flask/_compat.py"],
+    [7, "flask/wrappers.py"],
+    [8, "flask/blueprints.py"],
+    [9, "flask/templating.py"],
+    [10, "flask/__init__.py"],
+    [11, "flask/ctx.py"],
+    [12, "flask/__main__.py"],
+    [13, "flask/sessions.py"],
+    [14, "flask/exthook.py"],
+    [15, "flask/ext/__init__.py"],
+    [16, "flask/globals.py"],
+    [17, "flask/views.py"],
+    [18, "flask/config.py"],
+    [19, "flask/testing.py"],
+    [20, "flask/debughelpers.py"],
+    [21, "flask/json/__init__.py"],
+    [22, "flask/json/tag.py"]
+]
+
 file_rank_total = defaultdict(int)
 file_rank_count = defaultdict(int)
 
@@ -195,6 +234,10 @@ for each in ar:
     file_rank_count[each[1]] += 1
 
 for each in cn:
+    file_rank_total[each[1]] += each[0]
+    file_rank_count[each[1]] += 1
+
+for each in fc:
     file_rank_total[each[1]] += each[0]
     file_rank_count[each[1]] += 1
 
