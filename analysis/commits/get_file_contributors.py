@@ -22,5 +22,38 @@ def get_file_contributors(file_name):
         yield contributor[0], contributor[1], contributed_at[contributor[0]]
 
 
-for contributor in get_file_contributors("flask/app.py"):
-    print(contributor)
+files = [
+    "flask/app.py",
+    "flask/cli.py",
+    "flask/helpers.py",
+    "flask/sessions.py",
+    "flask/wrappers.py",
+    "flask/blueprints.py",
+    "flask/ctx.py",
+    "flask/testing.py",
+    "flask/module.py",
+    "flask/json/tag.py",
+    "flask/templating.py",
+    "flask/run.py",
+    "flask/__init__.py",
+    "flask/json.py",
+    "flask/config.py",
+    "flask/debughelpers.py",
+    "flask/_compat.py",
+    "flask/logging.py",
+    "flask/json/__init__.py",
+    "flask/exthook.py",
+    "flask/views.py",
+    "flask/ext/__init__.py",
+    "flask/signals.py",
+    "flask/conf.py",
+    "flask/globals.py",
+    "flask/session.py",
+    "flask/exceptions.py",
+    "flask/__main__.py",
+]
+
+for file in files:
+    # for contributor in get_file_contributors(file):
+    #     print(contributor[0], len(contributor[2]))
+    print(file, len(list(get_file_contributors(file))))
