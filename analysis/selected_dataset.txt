@@ -1,0 +1,99 @@
+==> Raw Stats By File:
++------------------------+------+------+------+----------+-------+-------+-----------------+
+| File                   | loc  | lloc | sloc | comments | multi | blank | single_comments |
++------------------------+------+------+------+----------+-------+-------+-----------------+
+| flask/app.py           | 2455 | 741  | 832  |   323    |  882  |  422  |       319       |
+| flask/blueprints.py    | 569  | 230  | 242  |    28    |  198  |  101  |        28       |
+| flask/cli.py           | 971  | 472  | 601  |    50    |  126  |  200  |        44       |
+| flask/config.py        | 301  | 107  | 108  |    1     |  130  |   61  |        2        |
+| flask/ctx.py           | 475  | 182  | 184  |    41    |  148  |   99  |        44       |
+| flask/debughelpers.py  | 183  |  99  | 128  |    2     |   21  |   31  |        3        |
+| flask/globals.py       |  62  |  27  |  37  |    2     |   8   |   15  |        2        |
+| flask/helpers.py       | 1153 | 424  | 475  |    89    |  376  |  212  |        90       |
+| flask/logging.py       | 109  |  40  |  47  |    5     |   29  |   28  |        5        |
+| flask/sessions.py      | 394  | 150  | 162  |    49    |  103  |   78  |        51       |
+| flask/signals.py       |  65  |  33  |  34  |    5     |   13  |   13  |        5        |
+| flask/templating.py    | 155  |  92  |  89  |    1     |   32  |   32  |        2        |
+| flask/testing.py       | 283  | 114  | 146  |    12    |   75  |   50  |        12       |
+| flask/views.py         | 163  |  52  |  48  |    23    |   55  |   37  |        23       |
+| flask/wrappers.py      | 137  |  49  |  47  |    20    |   37  |   31  |        22       |
+| flask/_compat.py       | 145  |  91  |  83  |    23    |   9   |   32  |        21       |
+| flask/__init__.py      |  60  |  46  |  45  |    3     |   8   |   4   |        3        |
+| flask/__main__.py      |  15  |  4   |  3   |    1     |   7   |   4   |        1        |
+| flask/json/tag.py      | 309  | 147  | 142  |    7     |   66  |   87  |        14       |
+| flask/json/__init__.py | 376  | 147  | 155  |    4     |  128  |   85  |        8        |
++------------------------+------+------+------+----------+-------+-------+-----------------+
+
+==> Cyclomatic Complexity By File:
++------------------------+-----------------+-------------------+-----------------+
+| File                   | Sum(Complexity) | Count(Complexity) | Avg(Complexity) |
++------------------------+-----------------+-------------------+-----------------+
+| flask/json/__init__.py |        7        |         1         |       7.0       |
+| flask/views.py         |        15       |         4         |       3.75      |
+| flask/testing.py       |        31       |         9         |       3.44      |
+| flask/templating.py    |        22       |         7         |       3.14      |
+| flask/config.py        |        36       |         12        |       3.0       |
+| flask/cli.py           |        49       |         17        |       2.88      |
+| flask/app.py           |       211       |         76        |       2.78      |
+| flask/wrappers.py      |        18       |         7         |       2.57      |
+| flask/ctx.py           |        53       |         22        |       2.41      |
+| flask/helpers.py       |        24       |         12        |       2.0       |
+| flask/debughelpers.py  |        6        |         3         |       2.0       |
+| flask/sessions.py      |        41       |         22        |       1.86      |
+| flask/blueprints.py    |        51       |         32        |       1.59      |
+| flask/json/tag.py      |        47       |         33        |       1.42      |
+| flask/_compat.py       |        8        |         7         |       1.14      |
+| flask/signals.py       |        4        |         4         |       1.0       |
++------------------------+-----------------+-------------------+-----------------+
+
+==> Maintainability Index By File:
++------------------------+-----------------------+
+| File                   | Maintainability Index |
++------------------------+-----------------------+
+| flask/app.py           |   2.873611293559958   |
+| flask/cli.py           |   27.61387558110269   |
+| flask/helpers.py       |   29.183284426484043  |
+| flask/ctx.py           |   48.797303450249196  |
+| flask/blueprints.py    |   50.930690288789215  |
+| flask/json/__init__.py |   55.06590239065166   |
+| flask/debughelpers.py  |   55.81345367778238   |
+| flask/config.py        |   56.22039609922887   |
+| flask/sessions.py      |   57.149971464710696  |
+| flask/json/tag.py      |   59.694192230481754  |
+| flask/views.py         |    61.4334809288865   |
+| flask/testing.py       |   61.829283593209674  |
+| flask/templating.py    |   67.28922858905452   |
+| flask/wrappers.py      |   68.87734685865645   |
+| flask/_compat.py       |   70.90721495883564   |
+| flask/__main__.py      |   74.84640431451162   |
+| flask/logging.py       |   77.21745512587495   |
+| flask/globals.py       |   84.16752922994455   |
+| flask/__init__.py      |         100.0         |
+| flask/signals.py       |         100.0         |
++------------------------+-----------------------+
+
+==> PyLint Score By File:
++------------------------+--------------+
+| File                   | PyLint Score |
++------------------------+--------------+
+| flask/logging.py       |     9.71     |
+| flask/templating.py    |     9.41     |
+| flask/views.py         |     9.33     |
+| flask/debughelpers.py  |     9.33     |
+| flask/json/tag.py      |     9.22     |
+| flask/helpers.py       |     8.84     |
+| flask/config.py        |     8.72     |
+| flask/cli.py           |     8.54     |
+| flask/json/__init__.py |     8.45     |
+| flask/testing.py       |     8.27     |
+| flask/app.py           |     7.85     |
+| flask/sessions.py      |     7.83     |
+| flask/blueprints.py    |     7.53     |
+| flask/ctx.py           |     7.28     |
+| flask/globals.py       |     6.92     |
+| flask/_compat.py       |     4.12     |
+| flask/wrappers.py      |     3.42     |
+| flask/signals.py       |     2.26     |
+| flask/__main__.py      |    10.00     |
+| flask/__init__.py      |    10.00     |
++------------------------+--------------+

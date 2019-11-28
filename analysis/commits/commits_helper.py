@@ -40,8 +40,8 @@ def parse_commit(commit):
 
             file_name = file[0:sep].strip()
             is_binary = False
-            line_added = None
-            line_removed = None
+            line_added = 0
+            line_removed = 0
 
             summary = file[sep + 3:]
             if summary.startswith("Bin "):
