@@ -1,0 +1,93 @@
+{
+    "url": "https://api.github.com/repos/pallets/flask/issues/2450",
+    "repository_url": "https://api.github.com/repos/pallets/flask",
+    "labels_url": "https://api.github.com/repos/pallets/flask/issues/2450/labels{/name}",
+    "comments_url": "https://api.github.com/repos/pallets/flask/issues/2450/comments",
+    "events_url": "https://api.github.com/repos/pallets/flask/issues/2450/events",
+    "html_url": "https://github.com/pallets/flask/pull/2450",
+    "id": 251397932,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM2NTkxODI1",
+    "number": 2450,
+    "title": "Blueprint view function name should not contain dots",
+    "user": {
+        "login": "Caratpine",
+        "id": 11403002,
+        "node_id": "MDQ6VXNlcjExNDAzMDAy",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/11403002?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Caratpine",
+        "html_url": "https://github.com/Caratpine",
+        "followers_url": "https://api.github.com/users/Caratpine/followers",
+        "following_url": "https://api.github.com/users/Caratpine/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Caratpine/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Caratpine/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Caratpine/subscriptions",
+        "organizations_url": "https://api.github.com/users/Caratpine/orgs",
+        "repos_url": "https://api.github.com/users/Caratpine/repos",
+        "events_url": "https://api.github.com/users/Caratpine/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Caratpine/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 357932495,
+            "node_id": "MDU6TGFiZWwzNTc5MzI0OTU=",
+            "url": "https://api.github.com/repos/pallets/flask/labels/blueprints",
+            "name": "blueprints",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-08-19T03:46:06Z",
+    "updated_at": "2018-10-23T17:44:20Z",
+    "closed_at": "2017-10-09T15:18:35Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+        "url": "https://api.github.com/repos/pallets/flask/pulls/2450",
+        "html_url": "https://github.com/pallets/flask/pull/2450",
+        "diff_url": "https://github.com/pallets/flask/pull/2450.diff",
+        "patch_url": "https://github.com/pallets/flask/pull/2450.patch"
+    },
+    "body": "\r\n\r\nI want to use `before_request` function to my `blueprint`. here is my usecase:\r\n\r\n\r\n```\r\nfrom flask import Flask, Blueprint, request, abort\r\nfrom flask.views import MethodView\r\n\r\n\r\napp = Flask(__name__)\r\nsystem = Blueprint('system', __name__, url_prefix='/system')\r\n\r\n\r\n@system.before_request\r\ndef auth():\r\n    if not request.headers.get('token', None):\r\n        abort(401)\r\n\r\n\r\nclass UserView(MethodView):\r\n    def get(self):\r\n        return 'user list'\r\n\r\n\r\nclass UserProfileView(MethodView):\r\n    def get(self, id):\r\n        return 'hello {}'.format(id)\r\n\r\n\r\nsystem.add_url_rule('/user', view_func=UserView.as_view('user'))\r\nsystem.add_url_rule('/user/<int:id>/profile', view_func=UserProfileView.as_view('user.profile'))\r\n\r\napp.register_blueprint(system)\r\n\r\napp.run(debug=True)\r\n\r\n```\r\n\r\nwhen I test `/system/user`, `auth` function can work, when I test `/system/user/1/profile` it doesn't work.\r\n\r\nso I debug my code on shell:\r\n\r\n```\r\nIn [1]: from test import app\r\n\r\nIn [2]: app\r\nOut[2]: <Flask 'test'>\r\n\r\nIn [3]: app.blueprints\r\nOut[3]: {'system': <flask.blueprints.Blueprint at 0x1020bc850>}\r\n\r\nIn [4]: from flask import request\r\n\r\nIn [5]: with app.test_request_context('/system/user'):\r\n   ...:     print request.blueprint\r\n   ...:\r\nsystem\r\n\r\nIn [6]: with app.test_request_context('/system/user/1/profile'):\r\n   ...:     print request.blueprint\r\n   ...:\r\nsystem.user\r\n```\r\n\r\nit's ridiculous!\r\n\r\nso I read the [flask/wrapper.py](https://github.com/pallets/flask/blob/7c510199850957161240f081359e2246d8982be1/flask/wrappers.py#L152)\r\n\r\n```\r\n@property\r\ndef blueprint(self):\r\n   \"\"\"The name of the current blueprint\"\"\"\r\n   if self.url_rule and '.' in self.url_rule.endpoint:\r\n       return self.url_rule.endpoint.rsplit('.', 1)[0]\r\n```\r\n\r\nI know my view function endpoint name is not normative.\r\n\r\nI think Blueprint endpoints should not contain dots. view function name can instead endpoint when endpoint is none, so view function name should not contain dots either.\r\n\r\n\r\nsorry for my bad English. I'm shame it!\r\n\r\n\r\n",
+    "comments_inline": [
+        {
+            "url": "https://api.github.com/repos/pallets/flask/issues/comments/335189816",
+            "html_url": "https://github.com/pallets/flask/pull/2450#issuecomment-335189816",
+            "issue_url": "https://api.github.com/repos/pallets/flask/issues/2450",
+            "id": 335189816,
+            "node_id": "MDEyOklzc3VlQ29tbWVudDMzNTE4OTgxNg==",
+            "user": {
+                "login": "davidism",
+                "id": 1242887,
+                "node_id": "MDQ6VXNlcjEyNDI4ODc=",
+                "avatar_url": "https://avatars1.githubusercontent.com/u/1242887?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/davidism",
+                "html_url": "https://github.com/davidism",
+                "followers_url": "https://api.github.com/users/davidism/followers",
+                "following_url": "https://api.github.com/users/davidism/following{/other_user}",
+                "gists_url": "https://api.github.com/users/davidism/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/davidism/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/davidism/subscriptions",
+                "organizations_url": "https://api.github.com/users/davidism/orgs",
+                "repos_url": "https://api.github.com/users/davidism/repos",
+                "events_url": "https://api.github.com/users/davidism/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/davidism/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "created_at": "2017-10-09T15:18:30Z",
+            "updated_at": "2017-10-09T15:18:30Z",
+            "author_association": "MEMBER",
+            "body": "Thanks! Rebased against master, added a changelog, and squashed."
+        }
+    ]
+}

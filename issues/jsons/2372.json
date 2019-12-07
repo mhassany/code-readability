@@ -1,0 +1,63 @@
+{
+    "url": "https://api.github.com/repos/pallets/flask/issues/2372",
+    "repository_url": "https://api.github.com/repos/pallets/flask",
+    "labels_url": "https://api.github.com/repos/pallets/flask/issues/2372/labels{/name}",
+    "comments_url": "https://api.github.com/repos/pallets/flask/issues/2372/comments",
+    "events_url": "https://api.github.com/repos/pallets/flask/issues/2372/events",
+    "html_url": "https://github.com/pallets/flask/issues/2372",
+    "id": 235964788,
+    "node_id": "MDU6SXNzdWUyMzU5NjQ3ODg=",
+    "number": 2372,
+    "title": "JSONEncoder encodes aware datetime objects in non-UTC timezone incorrectly as being in GMT.",
+    "user": {
+        "login": "astralblue",
+        "id": 1522566,
+        "node_id": "MDQ6VXNlcjE1MjI1NjY=",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/1522566?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/astralblue",
+        "html_url": "https://github.com/astralblue",
+        "followers_url": "https://api.github.com/users/astralblue/followers",
+        "following_url": "https://api.github.com/users/astralblue/following{/other_user}",
+        "gists_url": "https://api.github.com/users/astralblue/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/astralblue/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/astralblue/subscriptions",
+        "organizations_url": "https://api.github.com/users/astralblue/orgs",
+        "repos_url": "https://api.github.com/users/astralblue/repos",
+        "events_url": "https://api.github.com/users/astralblue/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/astralblue/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 170296925,
+            "node_id": "MDU6TGFiZWwxNzAyOTY5MjU=",
+            "url": "https://api.github.com/repos/pallets/flask/labels/good%20first%20issue",
+            "name": "good first issue",
+            "color": "fbca04",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 398831866,
+            "node_id": "MDU6TGFiZWwzOTg4MzE4NjY=",
+            "url": "https://api.github.com/repos/pallets/flask/labels/json",
+            "name": "json",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-06-14T18:11:04Z",
+    "updated_at": "2017-06-15T01:42:15Z",
+    "closed_at": "2017-06-15T01:42:15Z",
+    "author_association": "NONE",
+    "body": "``flask.json.JSONEncoder()`` encodes aware datetime objects in non-UTC timezone incorrectly using local time tuple with GMT.\r\n\r\n### Expected Behavior\r\n\r\nThe following code segment should print ``\"Sun, 01 Jan 2017 20:34:56 GMT\"``  (12:34:56 PST8PDT is 20:34:56 GMT):\r\n\r\n```python\r\nfrom datetime import datetime\r\nfrom pytz import timezone\r\ndt = timezone('PST8PDT').localize(datetime(2017, 1, 1, 12, 34, 56))\r\n\r\nfrom flask.json import JSONEncoder\r\nencoder = JSONEncoder()\r\nprint(encoder.encode(dt))\r\n```\r\n\r\n### Actual Behavior\r\n\r\nThe preceding code segment prints ``\"Sun, 01 Jan 2017 12:34:56 GMT\"`` instead, that is, local timetuple() appended with GMT.\r\n\r\n### Environment\r\n\r\n* Python version: 3.5.3\r\n* Flask version: 0.12.2\r\n* Werkzeug version: 0.12.2\r\n"
+}

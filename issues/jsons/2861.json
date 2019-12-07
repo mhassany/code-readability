@@ -1,0 +1,60 @@
+{
+    "url": "https://api.github.com/repos/pallets/flask/issues/2861",
+    "repository_url": "https://api.github.com/repos/pallets/flask",
+    "labels_url": "https://api.github.com/repos/pallets/flask/issues/2861/labels{/name}",
+    "comments_url": "https://api.github.com/repos/pallets/flask/issues/2861/comments",
+    "events_url": "https://api.github.com/repos/pallets/flask/issues/2861/events",
+    "html_url": "https://github.com/pallets/flask/pull/2861",
+    "id": 340279369,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAwNzI4OTM5",
+    "number": 2861,
+    "title": "[docs] Fix broken Sphinx cross-references; use :doc: tags where necessary",
+    "user": {
+        "login": "jwflory",
+        "id": 4721034,
+        "node_id": "MDQ6VXNlcjQ3MjEwMzQ=",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/4721034?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jwflory",
+        "html_url": "https://github.com/jwflory",
+        "followers_url": "https://api.github.com/users/jwflory/followers",
+        "following_url": "https://api.github.com/users/jwflory/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jwflory/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jwflory/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jwflory/subscriptions",
+        "organizations_url": "https://api.github.com/users/jwflory/orgs",
+        "repos_url": "https://api.github.com/users/jwflory/repos",
+        "events_url": "https://api.github.com/users/jwflory/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jwflory/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 32876,
+            "node_id": "MDU6TGFiZWwzMjg3Ng==",
+            "url": "https://api.github.com/repos/pallets/flask/labels/docs",
+            "name": "docs",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-11T14:54:46Z",
+    "updated_at": "2018-07-20T19:57:11Z",
+    "closed_at": "2018-07-20T17:42:09Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+        "url": "https://api.github.com/repos/pallets/flask/pulls/2861",
+        "html_url": "https://github.com/pallets/flask/pull/2861",
+        "diff_url": "https://github.com/pallets/flask/pull/2861.diff",
+        "patch_url": "https://github.com/pallets/flask/pull/2861.patch"
+    },
+    "body": "This PR\u2026\r\n\r\n* Fixes broken cross-references to other documentation\r\n* Fixes all warnings from Sphinx when building the docs\r\n* Makes an explicit call-out to contributing guidelines in README\r\n\r\nI hit the broken cross-references when reading the docs, when opening the link to the uWSGI docs from the Standalone WSGI Containers page would give me a 404 error. It seems like there was some rearranging at some point and this was probably overlooked, so this should fix the broken links and make a better experience for others browsing the docs. :slightly_smiling_face: \r\n\r\nAdditionally, in an oversight, I missed the contributing guidelines in the root directory of the repository but I did scan the README. When I came back to this, I found the contributing guidelines, but I would have noticed them quicker and submitted this PR a day earlier if I had seen them mentioned in the README. So I thought an explicit call-out to the existing contributing guidelines (which were well-written and very helpful to me) in the README might be useful for others too.\r\n\r\nI successfully ran the tests on the docs and I was able to build them locally on my workstation.\r\n\r\n<!--\r\nCommit checklist:\r\n\r\n* add tests that fail without the patch\r\n* ensure all tests pass with ``pytest``\r\n* add documentation to the relevant docstrings or pages\r\n* add ``versionadded`` or ``versionchanged`` directives to relevant docstrings\r\n* add a changelog entry if this patch changes code\r\n\r\nTests, coverage, and docs will be run automatically when you submit the pull\r\nrequest, but running them yourself can save time.\r\n-->\r\n"
+}

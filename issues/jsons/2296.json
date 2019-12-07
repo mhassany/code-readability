@@ -1,0 +1,93 @@
+{
+    "url": "https://api.github.com/repos/pallets/flask/issues/2296",
+    "repository_url": "https://api.github.com/repos/pallets/flask",
+    "labels_url": "https://api.github.com/repos/pallets/flask/issues/2296/labels{/name}",
+    "comments_url": "https://api.github.com/repos/pallets/flask/issues/2296/comments",
+    "events_url": "https://api.github.com/repos/pallets/flask/issues/2296/events",
+    "html_url": "https://github.com/pallets/flask/pull/2296",
+    "id": 230493007,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIxODQ3MjQ5",
+    "number": 2296,
+    "title": "Added reference and link to Werkzeug debugger documentation",
+    "user": {
+        "login": "tullyrankin",
+        "id": 1717898,
+        "node_id": "MDQ6VXNlcjE3MTc4OTg=",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/1717898?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tullyrankin",
+        "html_url": "https://github.com/tullyrankin",
+        "followers_url": "https://api.github.com/users/tullyrankin/followers",
+        "following_url": "https://api.github.com/users/tullyrankin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tullyrankin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tullyrankin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tullyrankin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tullyrankin/orgs",
+        "repos_url": "https://api.github.com/users/tullyrankin/repos",
+        "events_url": "https://api.github.com/users/tullyrankin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tullyrankin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 32876,
+            "node_id": "MDU6TGFiZWwzMjg3Ng==",
+            "url": "https://api.github.com/repos/pallets/flask/labels/docs",
+            "name": "docs",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-05-22T19:22:00Z",
+    "updated_at": "2017-05-22T19:32:12Z",
+    "closed_at": "2017-05-22T19:28:06Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+        "url": "https://api.github.com/repos/pallets/flask/pulls/2296",
+        "html_url": "https://github.com/pallets/flask/pull/2296",
+        "diff_url": "https://github.com/pallets/flask/pull/2296.diff",
+        "patch_url": "https://github.com/pallets/flask/pull/2296.patch"
+    },
+    "body": "",
+    "comments_inline": [
+        {
+            "url": "https://api.github.com/repos/pallets/flask/issues/comments/303196818",
+            "html_url": "https://github.com/pallets/flask/pull/2296#issuecomment-303196818",
+            "issue_url": "https://api.github.com/repos/pallets/flask/issues/2296",
+            "id": 303196818,
+            "node_id": "MDEyOklzc3VlQ29tbWVudDMwMzE5NjgxOA==",
+            "user": {
+                "login": "davidism",
+                "id": 1242887,
+                "node_id": "MDQ6VXNlcjEyNDI4ODc=",
+                "avatar_url": "https://avatars1.githubusercontent.com/u/1242887?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/davidism",
+                "html_url": "https://github.com/davidism",
+                "followers_url": "https://api.github.com/users/davidism/followers",
+                "following_url": "https://api.github.com/users/davidism/following{/other_user}",
+                "gists_url": "https://api.github.com/users/davidism/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/davidism/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/davidism/subscriptions",
+                "organizations_url": "https://api.github.com/users/davidism/orgs",
+                "repos_url": "https://api.github.com/users/davidism/repos",
+                "events_url": "https://api.github.com/users/davidism/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/davidism/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "created_at": "2017-05-22T19:28:37Z",
+            "updated_at": "2017-05-22T19:28:37Z",
+            "author_association": "MEMBER",
+            "body": "closes #1625"
+        }
+    ]
+}

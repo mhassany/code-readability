@@ -1,0 +1,60 @@
+{
+    "url": "https://api.github.com/repos/pallets/flask/issues/2059",
+    "repository_url": "https://api.github.com/repos/pallets/flask",
+    "labels_url": "https://api.github.com/repos/pallets/flask/issues/2059/labels{/name}",
+    "comments_url": "https://api.github.com/repos/pallets/flask/issues/2059/comments",
+    "events_url": "https://api.github.com/repos/pallets/flask/issues/2059/events",
+    "html_url": "https://github.com/pallets/flask/pull/2059",
+    "id": 183411801,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODk2MjAyNDA=",
+    "number": 2059,
+    "title": "Fix safe_join test behavior on Windows",
+    "user": {
+        "login": "infinite-Joy",
+        "id": 9998813,
+        "node_id": "MDQ6VXNlcjk5OTg4MTM=",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/9998813?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/infinite-Joy",
+        "html_url": "https://github.com/infinite-Joy",
+        "followers_url": "https://api.github.com/users/infinite-Joy/followers",
+        "following_url": "https://api.github.com/users/infinite-Joy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/infinite-Joy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/infinite-Joy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/infinite-Joy/subscriptions",
+        "organizations_url": "https://api.github.com/users/infinite-Joy/orgs",
+        "repos_url": "https://api.github.com/users/infinite-Joy/repos",
+        "events_url": "https://api.github.com/users/infinite-Joy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/infinite-Joy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 386620463,
+            "node_id": "MDU6TGFiZWwzODY2MjA0NjM=",
+            "url": "https://api.github.com/repos/pallets/flask/labels/testing",
+            "name": "testing",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-10-17T13:10:32Z",
+    "updated_at": "2018-10-23T17:43:58Z",
+    "closed_at": "2017-05-16T00:11:35Z",
+    "author_association": "NONE",
+    "pull_request": {
+        "url": "https://api.github.com/repos/pallets/flask/pulls/2059",
+        "html_url": "https://github.com/pallets/flask/pull/2059",
+        "diff_url": "https://github.com/pallets/flask/pull/2059.diff",
+        "patch_url": "https://github.com/pallets/flask/pull/2059.patch"
+    },
+    "body": "this is for resolution of https://github.com/pallets/flask/issues/2033\n\nBase directory test is not extended to windows as not sure if they pose a security risk or not or what can the resolution be. Currentl base directory tests raise NotFound exception\n"
+}

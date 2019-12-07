@@ -1,0 +1,60 @@
+{
+    "url": "https://api.github.com/repos/pallets/flask/issues/3248",
+    "repository_url": "https://api.github.com/repos/pallets/flask",
+    "labels_url": "https://api.github.com/repos/pallets/flask/issues/3248/labels{/name}",
+    "comments_url": "https://api.github.com/repos/pallets/flask/issues/3248/comments",
+    "events_url": "https://api.github.com/repos/pallets/flask/issues/3248/events",
+    "html_url": "https://github.com/pallets/flask/pull/3248",
+    "id": 451216432,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg0MzU4ODE2",
+    "number": 3248,
+    "title": "Added :param to the Blueprint concstructor docstring",
+    "user": {
+        "login": "Vicolatope",
+        "id": 16017996,
+        "node_id": "MDQ6VXNlcjE2MDE3OTk2",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/16017996?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Vicolatope",
+        "html_url": "https://github.com/Vicolatope",
+        "followers_url": "https://api.github.com/users/Vicolatope/followers",
+        "following_url": "https://api.github.com/users/Vicolatope/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Vicolatope/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Vicolatope/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Vicolatope/subscriptions",
+        "organizations_url": "https://api.github.com/users/Vicolatope/orgs",
+        "repos_url": "https://api.github.com/users/Vicolatope/repos",
+        "events_url": "https://api.github.com/users/Vicolatope/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Vicolatope/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 32876,
+            "node_id": "MDU6TGFiZWwzMjg3Ng==",
+            "url": "https://api.github.com/repos/pallets/flask/labels/docs",
+            "name": "docs",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-06-02T17:47:22Z",
+    "updated_at": "2019-06-12T21:09:27Z",
+    "closed_at": "2019-06-12T21:02:57Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+        "url": "https://api.github.com/repos/pallets/flask/pulls/3248",
+        "html_url": "https://github.com/pallets/flask/pull/3248",
+        "diff_url": "https://github.com/pallets/flask/pull/3248.diff",
+        "patch_url": "https://github.com/pallets/flask/pull/3248.patch"
+    },
+    "body": "Added the params list to the Blueprint documentation. closes #3216"
+}

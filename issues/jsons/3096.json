@@ -1,0 +1,60 @@
+{
+    "url": "https://api.github.com/repos/pallets/flask/issues/3096",
+    "repository_url": "https://api.github.com/repos/pallets/flask",
+    "labels_url": "https://api.github.com/repos/pallets/flask/issues/3096/labels{/name}",
+    "comments_url": "https://api.github.com/repos/pallets/flask/issues/3096/comments",
+    "events_url": "https://api.github.com/repos/pallets/flask/issues/3096/events",
+    "html_url": "https://github.com/pallets/flask/pull/3096",
+    "id": 409429122,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjUyNDE1OTUy",
+    "number": 3096,
+    "title": "helpers.py: Fix docs of url_for(..., _external=True)",
+    "user": {
+        "login": "RyanSquared",
+        "id": 12415837,
+        "node_id": "MDQ6VXNlcjEyNDE1ODM3",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/12415837?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/RyanSquared",
+        "html_url": "https://github.com/RyanSquared",
+        "followers_url": "https://api.github.com/users/RyanSquared/followers",
+        "following_url": "https://api.github.com/users/RyanSquared/following{/other_user}",
+        "gists_url": "https://api.github.com/users/RyanSquared/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/RyanSquared/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/RyanSquared/subscriptions",
+        "organizations_url": "https://api.github.com/users/RyanSquared/orgs",
+        "repos_url": "https://api.github.com/users/RyanSquared/repos",
+        "events_url": "https://api.github.com/users/RyanSquared/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/RyanSquared/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 32876,
+            "node_id": "MDU6TGFiZWwzMjg3Ng==",
+            "url": "https://api.github.com/repos/pallets/flask/labels/docs",
+            "name": "docs",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-02-12T18:02:36Z",
+    "updated_at": "2019-05-16T14:30:08Z",
+    "closed_at": "2019-05-16T14:30:08Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+        "url": "https://api.github.com/repos/pallets/flask/pulls/3096",
+        "html_url": "https://github.com/pallets/flask/pull/3096",
+        "diff_url": "https://github.com/pallets/flask/pull/3096.diff",
+        "patch_url": "https://github.com/pallets/flask/pull/3096.patch"
+    },
+    "body": "```\r\nryan@Ryans-Mac-mini ~ 11:59:51 % cat test.py\r\nimport flask\r\n\r\napp = flask.Flask(__name__)\r\n\r\n\r\n@app.route(\"/\")\r\ndef index():\r\n    return flask.url_for(\"index\", _external=True)\r\n\r\n\r\napp.run()\r\nryan@Ryans-Mac-mini ~ 11:59:57 % curl 127.0.0.1:5000\r\nhttp://127.0.0.1:5000/\r\nryan@Ryans-Mac-mini ~ 12:00:05 % curl localhost:5000\r\nhttp://localhost:5000/\r\nryan@Ryans-Mac-mini ~ 12:00:08 % nc localhost 5000\r\nGET / HTTP/1.1\r\nHost: testsite.com\r\n\r\nHTTP/1.0 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 20\r\nServer: Werkzeug/0.14.1 Python/3.7.1\r\nDate: Tue, 12 Feb 2019 18:00:18 GMT\r\n\r\nhttp://testsite.com/\r\nryan@Ryans-Mac-mini ~ 12:00:18 % nc localhost 5000\r\nGET / HTTP/1.0\r\n\r\nHTTP/1.0 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 22\r\nServer: Werkzeug/0.14.1 Python/3.7.1\r\nDate: Tue, 12 Feb 2019 18:00:24 GMT\r\n\r\nhttp://127.0.0.1:5000/\r\nryan@Ryans-Mac-mini ~ 12:00:24 %\r\n```\r\n\r\n<!--\r\nCommit checklist:\r\n\r\n* add tests that fail without the patch\r\n* ensure all tests pass with ``pytest``\r\n* add documentation to the relevant docstrings or pages\r\n* add ``versionadded`` or ``versionchanged`` directives to relevant docstrings\r\n* add a changelog entry if this patch changes code\r\n\r\nTests, coverage, and docs will be run automatically when you submit the pull\r\nrequest, but running them yourself can save time.\r\n-->\r\n"
+}

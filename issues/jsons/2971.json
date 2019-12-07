@@ -1,0 +1,93 @@
+{
+    "url": "https://api.github.com/repos/pallets/flask/issues/2971",
+    "repository_url": "https://api.github.com/repos/pallets/flask",
+    "labels_url": "https://api.github.com/repos/pallets/flask/issues/2971/labels{/name}",
+    "comments_url": "https://api.github.com/repos/pallets/flask/issues/2971/comments",
+    "events_url": "https://api.github.com/repos/pallets/flask/issues/2971/events",
+    "html_url": "https://github.com/pallets/flask/pull/2971",
+    "id": 374651953,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI2Mjk4NzUy",
+    "number": 2971,
+    "title": "Tutorial: Project Layout - clarify flask run",
+    "user": {
+        "login": "stepharr",
+        "id": 1139489,
+        "node_id": "MDQ6VXNlcjExMzk0ODk=",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/1139489?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/stepharr",
+        "html_url": "https://github.com/stepharr",
+        "followers_url": "https://api.github.com/users/stepharr/followers",
+        "following_url": "https://api.github.com/users/stepharr/following{/other_user}",
+        "gists_url": "https://api.github.com/users/stepharr/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/stepharr/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/stepharr/subscriptions",
+        "organizations_url": "https://api.github.com/users/stepharr/orgs",
+        "repos_url": "https://api.github.com/users/stepharr/repos",
+        "events_url": "https://api.github.com/users/stepharr/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/stepharr/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 32876,
+            "node_id": "MDU6TGFiZWwzMjg3Ng==",
+            "url": "https://api.github.com/repos/pallets/flask/labels/docs",
+            "name": "docs",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-10-27T14:38:25Z",
+    "updated_at": "2019-01-06T23:03:41Z",
+    "closed_at": "2019-01-06T23:03:40Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+        "url": "https://api.github.com/repos/pallets/flask/pulls/2971",
+        "html_url": "https://github.com/pallets/flask/pull/2971",
+        "diff_url": "https://github.com/pallets/flask/pull/2971.diff",
+        "patch_url": "https://github.com/pallets/flask/pull/2971.patch"
+    },
+    "body": "Clarify documentation as discussed here: https://github.com/pallets/flask/issues/2967",
+    "comments_inline": [
+        {
+            "url": "https://api.github.com/repos/pallets/flask/issues/comments/451783682",
+            "html_url": "https://github.com/pallets/flask/pull/2971#issuecomment-451783682",
+            "issue_url": "https://api.github.com/repos/pallets/flask/issues/2971",
+            "id": 451783682,
+            "node_id": "MDEyOklzc3VlQ29tbWVudDQ1MTc4MzY4Mg==",
+            "user": {
+                "login": "davidism",
+                "id": 1242887,
+                "node_id": "MDQ6VXNlcjEyNDI4ODc=",
+                "avatar_url": "https://avatars1.githubusercontent.com/u/1242887?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/davidism",
+                "html_url": "https://github.com/davidism",
+                "followers_url": "https://api.github.com/users/davidism/followers",
+                "following_url": "https://api.github.com/users/davidism/following{/other_user}",
+                "gists_url": "https://api.github.com/users/davidism/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/davidism/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/davidism/subscriptions",
+                "organizations_url": "https://api.github.com/users/davidism/orgs",
+                "repos_url": "https://api.github.com/users/davidism/repos",
+                "events_url": "https://api.github.com/users/davidism/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/davidism/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "created_at": "2019-01-06T23:03:40Z",
+            "updated_at": "2019-01-06T23:03:40Z",
+            "author_association": "MEMBER",
+            "body": "Thanks, going with an alternate wording instead."
+        }
+    ]
+}

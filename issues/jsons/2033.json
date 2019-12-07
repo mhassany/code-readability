@@ -1,0 +1,63 @@
+{
+    "url": "https://api.github.com/repos/pallets/flask/issues/2033",
+    "repository_url": "https://api.github.com/repos/pallets/flask",
+    "labels_url": "https://api.github.com/repos/pallets/flask/issues/2033/labels{/name}",
+    "comments_url": "https://api.github.com/repos/pallets/flask/issues/2033/comments",
+    "events_url": "https://api.github.com/repos/pallets/flask/issues/2033/events",
+    "html_url": "https://github.com/pallets/flask/issues/2033",
+    "id": 178296243,
+    "node_id": "MDU6SXNzdWUxNzgyOTYyNDM=",
+    "number": 2033,
+    "title": "failing test for safe_join in windows",
+    "user": {
+        "login": "infinite-Joy",
+        "id": 9998813,
+        "node_id": "MDQ6VXNlcjk5OTg4MTM=",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/9998813?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/infinite-Joy",
+        "html_url": "https://github.com/infinite-Joy",
+        "followers_url": "https://api.github.com/users/infinite-Joy/followers",
+        "following_url": "https://api.github.com/users/infinite-Joy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/infinite-Joy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/infinite-Joy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/infinite-Joy/subscriptions",
+        "organizations_url": "https://api.github.com/users/infinite-Joy/orgs",
+        "repos_url": "https://api.github.com/users/infinite-Joy/repos",
+        "events_url": "https://api.github.com/users/infinite-Joy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/infinite-Joy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 135583063,
+            "node_id": "MDU6TGFiZWwxMzU1ODMwNjM=",
+            "url": "https://api.github.com/repos/pallets/flask/labels/bug",
+            "name": "bug",
+            "color": "d93f0b",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 386620463,
+            "node_id": "MDU6TGFiZWwzODY2MjA0NjM=",
+            "url": "https://api.github.com/repos/pallets/flask/labels/testing",
+            "name": "testing",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-09-21T09:41:07Z",
+    "updated_at": "2017-05-16T00:11:35Z",
+    "closed_at": "2017-05-16T00:11:35Z",
+    "author_association": "NONE",
+    "body": "This seems like a bug on windows:\nTest run on windows gave me the following error\n\n```\n\n> py.test tests\\test_helpers.py\n\u2190[1m============================= test session starts ==========================\n===\u2190[0m\nplatform win32 -- Python 2.7.10, pytest-3.0.2, py-1.4.31, pluggy-0.3.1\nrootdir: , inifile: setup.cfg\ncollected 42 items \u2190[0m\u2190[1m\n\u2190[0m\ntests\\test_helpers.py ........................................F.\n\n================================== FAILURES ===================================\n\u2190[1m\u2190[31m_________________________ TestSafeJoin.test_safe_join _________________\n________\u2190[0m\n\nself = <test_helpers.TestSafeJoin object at 0x02F3F790>\n\n\u2190[1m    def test_safe_join(self):\u2190[0m\n\u2190[1m        # Valid combinations of *args and expected joined paths.\u2190[0m\n\u2190[1m        passing = (\u2190[0m\n\u2190[1m            (('a/b/c', ), 'a/b/c'),\u2190[0m\n\u2190[1m            (('/', 'a/', 'b/', 'c/', ), '/a/b/c'),\u2190[0m\n\u2190[1m            (('a', 'b', 'c', ), 'a/b/c'),\u2190[0m\n\u2190[1m            (('/a', 'b/c', ), '/a/b/c'),\u2190[0m\n\u2190[1m            (('a/b', 'X/../c'), 'a/b/c', ),\u2190[0m\n\u2190[1m            (('/a/b', 'c/X/..'), '/a/b/c', ),\u2190[0m\n\u2190[1m            # If last path is '' add a slash\u2190[0m\n\u2190[1m            (('/a/b/c', '', ), '/a/b/c/', ),\u2190[0m\n\u2190[1m            # Preserve dot slash\u2190[0m\n\u2190[1m            (('/a/b/c', './', ), '/a/b/c/.', ),\u2190[0m\n\u2190[1m            (('a/b/c', 'X/..'), 'a/b/c/.', ),\u2190[0m\n\u2190[1m            # Base directory is always considered safe\u2190[0m\n\u2190[1m            (('../', 'a/b/c'), '../a/b/c'),\u2190[0m\n\u2190[1m            (('/..', ), '/..'),\u2190[0m\n\u2190[1m        )\u2190[0m\n\u2190[1m    \u2190[0m\n\u2190[1m        for args, expected in passing:\u2190[0m\n\u2190[1m>           assert flask.safe_join(*args) == expected\u2190[0m\n\u2190[1m\u2190[31mE           assert '/a\\\\b\\\\c' == '/a/b/c'\u2190[0m\n\u2190[1m\u2190[31mE             - /a\\\\b\\\\c\u2190[0m\n\u2190[1m\u2190[31mE             + /a/b/c\u2190[0m\n\n\u2190[1m\u2190[31mtests\\test_helpers.py\u2190[0m:803: AssertionError\n\u2190[1m\u2190[31m===================== 1 failed, 41 passed in 1.33 seconds =============\n========\u2190[0m\n```\n\nIn windows the directories on an external location can be accessed using four back-slashes \"\\\\\\\\\" from python code. So I would suggest to return \"\\\\\\\\a\\\\b\\\\c\" if the env is windows. Of course this line of thinking can be na\u00efve and maybe there is a better approach there.\n"
+}
