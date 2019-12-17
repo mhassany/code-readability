@@ -1,0 +1,21 @@
+************* Module flask.json
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:31:0: C0103: Constant name "_slash_escape" doesn't conform to UPPER_CASE naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:47:0: C0103: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:53:0: C0103: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:73:4: E0202: An attribute defined in json.encoder line 158 hides this method (method-hidden)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:117:8: C0103: Variable name "bp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:137:8: C0103: Variable name "bp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:145:0: R0911: Too many return statements (10/6) (too-many-return-statements)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:211:4: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:213:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:217:0: C0103: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:226:0: C0103: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:256:0: C0103: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:289:4: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:297:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:301:0: C0103: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/json/__init__.py:375:0: C0111: Missing function docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.45/10 (previous run: 8.45/10, +0.00)
+

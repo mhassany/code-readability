@@ -1,0 +1,10 @@
+************* Module flask.templating
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/templating.py:27:4: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/templating.py:68:16: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/templating.py:72:16: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/templating.py:91:28: W0613: Unused argument 'template' (unused-argument)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/templating.py:120:4: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.41/10 (previous run: 9.41/10, +0.00)
+

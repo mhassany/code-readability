@@ -1,3 +1,6 @@
+# src/flask
+"src/flask" is the codebase of "pallets/flask".
+
 # Install Radon:
 https://pypi.org/project/radon/
 

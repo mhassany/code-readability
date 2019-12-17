@@ -1,0 +1,17 @@
+************* Module flask.config
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:22:0: R0205: Class 'ConfigAttribute' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:29:27: W0622: Redefining built-in 'type' (redefined-builtin)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:32:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:34:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:101:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:128:8: C0103: Variable name "d" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:132:16: W0122: Use of exec (exec-used)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:133:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:202:35: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:204:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:287:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/config.py:288:15: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 8.72/10 (previous run: 8.72/10, +0.00)
+

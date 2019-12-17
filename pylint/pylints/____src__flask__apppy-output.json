@@ -1,0 +1,176 @@
+************* Module flask.app
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:386:6: W0511: TODO remove the next three attrs when Sphinx :inherited-members: works (fixme)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1807:18: W0511: TODO: clean up once Werkzeug >= 0.15.5 is required (fixme)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1871:10: W0511: TODO: pass as param when Werkzeug>=1.0.0 is required (fixme)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1872:10: W0511: TODO: also remove note about this from docstring and docs (fixme)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:402:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        self,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:403:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        import_name,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:404:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        static_url_path=None,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:405:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        static_folder="static",
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:406:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        static_host=None,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:407:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        host_matching=False,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:408:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        subdomain_matching=False,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:409:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        template_folder="templates",
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:410:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        instance_path=None,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:411:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        instance_relative_config=False,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:412:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        root_path=None,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1177:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        self,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1178:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        rule,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1179:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        endpoint=None,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1180:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        view_func=None,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1181:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        provide_automatic_options=None,
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1182:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+        **options
+        ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1695:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            (request.blueprint, code),
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1696:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            (None, code),
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1697:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            (request.blueprint, None),
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1698:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            (None, None),
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1768:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            trap_bad_request is None
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1769:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            and self.debug
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1770:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            and isinstance(e, BadRequestKeyError)
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1902:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            not self.debug
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1903:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            or not isinstance(request.routing_exception, RequestRedirect)
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1904:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            or request.method in ("GET", "HEAD", "OPTIONS")
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1929:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            getattr(rule, "provide_automatic_options", False)
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1930:0: C0330: Wrong hanging indentation before block (add 4 spaces).
+            and req.method == "OPTIONS"
+            ^   | (bad-continuation)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1:0: C0302: Too many lines in module (2455/1000) (too-many-lines)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:72:0: C0103: Constant name "_sentinel" doesn't conform to UPPER_CASE naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:81:0: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:87:26: W0212: Access to a protected member _got_first_request of a client class (protected-access)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:102:0: R0902: Too many instance attributes (25/7) (too-many-instance-attributes)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:401:4: R0913: Too many arguments (11/5) (too-many-arguments)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:622:12: C0103: Variable name "fn" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:635:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:648:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:753:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:780:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:808:4: R0201: Method could be a function (no-self-use)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:832:12: C0103: Variable name "bp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:850:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1069:27: W0621: Redefining name 'request' from outer scope (line 46) (redefined-outer-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1090:27: W0621: Redefining name 'session' from outer scope (line 47) (redefined-outer-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1311:8: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1330:8: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1352:8: R1705: Unnecessary "else" after "return" (no-else-return)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1388:8: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1395:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1405:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1443:8: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1450:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1457:8: E1101: Method 'jinja_env' has no 'filters' member (no-member)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1480:8: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1487:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1496:8: E1101: Method 'jinja_env' has no 'tests' member (no-member)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1514:8: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1521:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1530:8: E1101: Method 'jinja_env' has no 'globals' member (no-member)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1533:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1547:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1560:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1574:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1613:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1646:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1652:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1661:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1678:4: C0103: Argument name "f" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1686:4: C0103: Argument name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1694:18: C0103: Variable name "c" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1686:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1711:4: C0103: Argument name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1744:4: C0103: Argument name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1779:4: C0103: Argument name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1794:29: C0103: Variable name "tb" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1822:4: C0103: Argument name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1856:29: C0103: Variable name "tb" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1889:8: E1101: Method 'logger' has no 'error' member (no-member)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1893:38: W0621: Redefining name 'request' from outer scope (line 46) (redefined-outer-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1949:15: W0703: Catching too general exception Exception (broad-except)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1946:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1948:16: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1949:8: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1950:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1953:4: C0103: Argument name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1970:15: W0703: Catching too general exception Exception (broad-except)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:1973:12: E1101: Method 'logger' has no 'exception' member (no-member)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2003:8: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2007:34: W0613: Unused argument 'error' (unused-argument)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2007:4: R0201: Method could be a function (no-self-use)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2017:4: C0103: Argument name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2106:16: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2017:4: R0912: Too many branches (17/12) (too-many-branches)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2135:33: W0621: Redefining name 'request' from outer scope (line 46) (redefined-outer-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2135:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2182:12: C0103: Variable name "bp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2190:29: C0103: Variable name "tb" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2193:16: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2196:12: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2218:8: C0103: Variable name "bp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2230:12: C0103: Variable name "rv" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2207:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2248:8: C0103: Variable name "bp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2249:16: W0212: Access to a protected member _after_request_functions of a client class (protected-access)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2284:8: C0103: Variable name "bp" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2436:19: W0703: Catching too general exception Exception (broad-except)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:2436:12: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+/Volumes/Storage/jone30rw/workspaces/533-paper_flask/src/flask/app.py:102:0: R0904: Too many public methods (68/20) (too-many-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 7.85/10 (previous run: 7.85/10, +0.00)
+

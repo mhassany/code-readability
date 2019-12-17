@@ -23,7 +23,7 @@ def run_linter(path):
         # or a file
         else:
             # linter command
-            output = "./" + \
+            output = "./pylints/" + \
                 (n_path.replace("/", "__").replace(".", "")) + "-output.json"
             # -f json
             # write output to a file
@@ -67,5 +67,5 @@ def set_default(obj):
     raise TypeError
 
 # then write it to the file
-with open('../pylint.json', 'w') as file:
+with open('./pylint.json', 'w') as file:
     json.dump(summary, file, indent=4, default=set_default)

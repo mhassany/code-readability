@@ -7,7 +7,7 @@ from collections import namedtuple, Counter
 def issues():
     # for now there are 3438 issues
     for number in range(1, 3439):
-        path = "./jsons/" + str(number) + ".json"
+        path = "./issues/" + str(number) + ".json"
 
         if os.path.exists(path):
             file = open(path, "r")
